@@ -1,0 +1,147 @@
+<!--
+h1: Датчик водорода MQ-8 / Troyka-модуль
+h1-detail: Датчик водорода MQ-8 / Troyka-модуль
+short: Датчик для обнаружения водорода
+title: Купить датчик водорода MQ-8 в Киеве и Украине
+description: Сенсор газа MQ-8 поможет обнаружить утечку водорода и других вредных газов в окружающую среду.
+-->
+
+<span class="font-family-size-head">
+  <p>
+    На вашем производстве применяется водород или экспериментируете с топливными элементами в домашних условиях. Вы
+    хотите повторить судьбу «Гинденбурга»? Избежать взрыва поможет высоко-специфичный датчик водорода MQ-8.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/tU1WjoE15m8" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2><span class="header-color">Общие сведения</span></h2>
+
+<span class="font-family-size-article">
+  <p>
+    Датчик построен на базе полупроводникового газоанализатора
+    <a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/mq8-datasheet.pdf">MQ-8</a>. На выходе сенсора аналоговый сигнал,
+    пропорциональный содержанию газов в окружающей среде.
+  </p>
+
+  <p>
+    Внутри датчика расположен чувствительный элемент, который состоит из керамической трубки с покрытием Al2O3 (оксид
+    алюминия) и нанесенного на неё чувствительного слоя SnO2 (диоксида олова). Внутри трубки проходит нагревательный
+    элемент, который нагревает чувствительный слой до температуры, при которой он начинает реагировать на определяемый
+    газ. Чувствительность к разным газам достигается варьированием состава примесей в чувствительном слое.
+  </p>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/amperka-troyka-sensor-gas-mq8.1.png"
+      style="max-width: 50%;"
+      class="img-center"
+    />
+  </p>
+</span>
+
+<h2><span class="header-color">Подключение</span></h2>
+
+<span class="font-family-size-article">
+  <p>
+    В общем случае датчик подключается к
+    <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через два трёхконтактных разъёма,
+    по первому осуществляется питание датчика и снятие показаний сенсора, по второму — подается напряжение на
+    нагревательный элемент сенсора. Если нет нужды в ручном управлении нагревателем, оставьте только первый шлейф, а
+    питание на нагреватель подайте установкой джампера.
+  </p>
+
+  <h3><span class="header-color">Первая группа</span></h3>
+  <ul>
+    <li>Сигнальный (S) — выходной сигнал сенсора. Подключите к аналоговому входу микроконтроллера.</li>
+    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
+    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
+  </ul>
+  <h3><span class="header-color">Вторая группа</span></h3>
+  <ul>
+    <li>Сигнальный (E) — управление питанием нагревателя. Подключите к цифровому пину микроконтроллера.</li>
+    <li>Питание (H) — питание нагревателя. Соедините с пином 5V.</li>
+    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
+  </ul>
+
+  <p>
+    При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или
+    <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от
+    проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.
+  </p>
+  <p>
+    Также модуль физически совместим с
+    <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Сенсор на выходе выдаёт значения вредных газов в абстрактных единицах. Используйте библиотеки для перевода данных из
+    абстрактных значений в
+    <span class="font-family-monospaced">ppm.</span>
+  </p>
+
+  <ul>
+    <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:gas-sensor">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль c датчиком MQ-8</li>
+    <li>2× Трёхпроводной шлейф</li>
+    <li>1× Джампер</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Газоанализатор: MQ-8</li>
+    <li>Рекомендуемый газ: водород</li>
+    <li>Выходной интерфейс: аналоговый сигнал</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+    <li>Напряжение питания нагревателя: 5 В</li>
+    <li>Напряжение питания датчика: 3,3–5 В</li>
+    <li>Потребляемый ток: 150 мА</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/продукты:mq8">Руководство по использованию, документация и примеры</a></li>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:gas-sensor">Библиотека для Espruino</a></li>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/mq8-datasheet.pdf">Datasheet на датчик MQ-8</a></li>
+  </ul>
+</span>
