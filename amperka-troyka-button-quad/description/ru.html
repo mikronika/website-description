@@ -1,0 +1,194 @@
+<!--
+h1: Четырёхкнопочная клавиатура / Troyka-модуль
+h1-detail: Четырёхкнопочная клавиатура / Troyka-модуль
+short: Четыре тактовых кнопки на одной плате
+title: Купить Quad Switch в Харькове и Украине
+description: Используйте четырёхкнопочную клавиатуру для управления роботом, настройки устройства или навигации в многоуровневом меню.
+-->
+
+<span class="font-family-size-head">
+  <p>
+    Используйте четырёхкнопочную клавиатуру для управления роботом, настройки устройства или навигации в многоуровневом
+    меню. Модуль с четырьмя кнопками пригодиться, где одной кнопки слишком мало, а матричной клавиатуры — слишком много.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/CyIVAscrsx0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    В 95% электронных устройств присутствует хотя бы одна кнопка. По клику на клавишу может произойти что угодно:
+    включиться телевизор, приготовиться еда или взлетит самолёт.
+  </p>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-button-quad/media/amperka-troyka-button-quad.1.gif"
+      style="max-width: 75%;"
+      class="img-center"
+    />
+  </p>
+
+  <p>
+    На одноюнитовом Troyka-модуле собраны четыре тактовые кнопки c общим питанием и отдельными сигнальными пинами.
+    Каждая кнопка — это простой цифровой датчик. Пока кнопка не нажата, датчик выдаёт логическую единицу, когда кнопка
+    зажата — логический ноль. Все кнопки модуля работают независимо — их можно нажимать по одной или все сразу.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Эффект дребезга</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    При нажимании на кнопку между контактными пластинами возникают микроискры, провоцирующие до десятка переключений за
+    несколько миллисекунд. Явление называется дребезгом. Микроконтроллер «поймает» все эти нажатия, потому что дребезг
+    не отличим от настоящего нажатия на кнопку. Это нужно учитывать, если необходимо фиксировать «клики».
+  </p>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-button-quad/media/amperka-troyka-button-quad.2.png"
+      style="max-width: 100%;"
+      class="img-center"
+    />
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    На модуле выведены две группы Troyka-контактов.
+  </p>
+</span>
+
+<h3>
+  <span class="header-color">Первая группа</span>
+</h3>
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      Сигнальный (S1) — выход кнопки S1. Используется для передачи текущего состояния кнопки. Подключите к цифровому
+      пину микроконтроллера.
+    </li>
+    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
+    <li>Земля (G) — соедините с землёй микроконтроллера.</li>
+  </ul>
+</span>
+
+<h3>
+  <span class="header-color">Вторая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      Сигнальный (S2) — выход кнопки S2. Используется для передачи текущего состояния кнопки. Подключите к цифровому
+      пину микроконтроллера.
+    </li>
+    <li>
+      Сигнальный (S3) — выход кнопки S3. Используется для передачи текущего состояния кнопки. Подключите к цифровому
+      пину микроконтроллера.
+    </li>
+    <li>
+      Сигнальный (S4) — выход кнопки S4. Используется для передачи текущего состояния кнопки. Подключите к цифровому
+      пину микроконтроллера.
+    </li>
+  </ul>
+
+  <p>
+    При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или
+    <a href="https://mikronika.net/collection/iskra">Iskra</a> будет крайне удобно использовать
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>.
+  </p>
+
+  <p>
+    Чтобы полностью избавиться от проводов, возьмите
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Кнопка, по своей сути — это бинарный цифровой датчик. Пока кнопка не зажата, датчик отдаёт логическую единицу, когда
+    кнопка зажата — логический ноль.
+  </p>
+
+  <p>
+    Используйте библиотеки для облегчения написания кода программ. Они скрывают в себе все тонкости общения с кнопкой и
+    позволяют программно избежать дребезга.
+  </p>
+
+  <ul>
+    <li><a href="https://github.com/amperka/TroykaButton">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:button">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%;">
+    Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы
+    <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и
+    <a href="https://mikronika.net/product/amperka-kit-malina-v4">Малина</a>.
+  </div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль с кнопками</li>
+    <li>2× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Напряжение питания: 3,3–5 В</li>
+    <li>Количество кнопок: 4</li>
+    <li>Сопротивление подтягивающих резисторов: 10 кОм</li>
+    <li>Габариты: 25,4×25,4</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li>
+      <a href="http://wiki.amperka.ru/продукты:troyka-quad-switch">Техническая документация и примеры работы</a>
+    </li>
+    <li><a href="https://github.com/amperka/TroykaButton">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:button">Библиотека для Espruino</a></li>
+  </ul>
+</span>
