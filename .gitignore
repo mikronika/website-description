@@ -1,0 +1,13 @@
+/public_html/system/storage/modification/*
+!/public_html/system/storage/modification/index.html
+# System Cache Files
+/public_html/system/storage/cache/*
+!/public_html/system/storage/cache/index.html
+# Image Cache Files
+/public_html/image/cache/*
+# Log Files
+/public_html/system/storage/logs/*
+!/public_html/system/storage/logs/index.html
+# Upload Files
+/public_html/system/storage/upload/*
+!/public_html/system/storage/upload/index.html
