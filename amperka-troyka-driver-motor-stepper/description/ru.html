@@ -1,0 +1,345 @@
+<!--
+h1: Драйвер шагового двигателя / Troyka-модуль
+h1-detail: Драйвер шагового двигателя / Troyka-модуль
+short: Драйвер для простого управления шаговым двигателем
+title: Купить драйвер шагового двигателя в Харькове и Украине
+description: Драйвер для управления шаговым двигателем для создания кормушки для животных, 3D-принтера или ЧПУ-станка.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Драйвер шагового двигателя / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>
+    Используйте драйвер шагового двигателя для управления шаговым мотором. Модуль прост в подключении: забудьте про
+    сборки из транзисторов на макетной плате — всё уже распаяно на компактной плате.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<span class="font-family-size-head">Драйвер шагового двигателя в проекте «Поворотный стол для 3D-фотосъемки»:</span>
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/eRLrCk5RlPs" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Начинка</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    За мускулы для управления мотором отвечает микросхема
+    <a href="https://mikronika.net/image/catalog/product/amperka-troyka-driver-motor-stepper/media/l293d-datasheet.pdf"
+      >L293D</a
+    >, которая состоит из двух H-мостов. Но для управления шаговым двигателем нужен не только драйвер, способный
+    управлять большим током и напряжением. Необходимо ещё и соблюдать сложную последовательность коммутации обмоток
+    шагового мотора. Для этого на модуле расположена специальная обвязка из микросхем логики, которая самостоятельно
+    следит за правильной коммутацией обмоток, в итоге управление мотором равносильно миганию светодиода. Теперь собрать
+    кормушку для домашних питомцев, 3D-принтер или ЧПУ-станок под силу каждому.
+  </p>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-driver-motor-stepper/media/amperka-troyka-driver-motor-stepper.1.png"
+      style="max-width: 75%"
+      class="img-center"
+    />
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      <a href="https://amperka.ru/page/what-is-troyka-system">Формфактор Troyka</a> — практичное решение для начинающих
+      и опытных мейкеров.
+    </li>
+    <li>
+      Драйвер выполнен на базе H-моста
+      <a
+        href="https://mikronika.net/image/catalog/product/amperka-troyka-driver-motor-stepper/media/l293d-datasheet.pdf"
+        >L293D</a
+      >.
+    </li>
+    <li>Диапазон напряжения двигателя 5–24 В с максимальный током до 600 мА.</li>
+    <li>Светодиодная индикация направления и скорости мотора.</li>
+    <li>Интуитивное управление мотором: Step, Dir и Direction.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение контроллера</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Драйвер подключается к
+    <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через три группы
+    Troyka-контактов.
+  </p>
+</span>
+
+<h3>
+  <span class="header-color">Шаг двигателя</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Step — шаг двигателя. При каждом переходе на пине с «низкого уровня» на «высокий», мотор делает шаг.</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h3>
+  <span class="header-color">Направление вращения</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">D</td>
+        <td>
+          Direction — управление направлением вращение шагового мотора. При «низком уровне» двигатель вращается в одну
+          сторону, а при «высоком» — в обратную.
+        </td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h3>
+  <span class="header-color">Управление питанием</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">E</td>
+        <td>
+          Enable — программное включение и отключение питания от двигателя. При «высоком уровне» мотор удерживает
+          текущее положение вала. При «низком уровне» питание от обмоток отключается и мотор вращается в свободном
+          положении.
+        </td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<span class="font-family-size-article">
+  <p>
+    При подключении к платформам формфактора Arduino R3 рекомендуем использовать
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров
+    <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль
+    физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.
+  </p>
+
+  <div class="wrap-info" style="max-width: 80%">
+    Если вам не нужно управлять программно выключением мотора или менять направления вала, можете не использовать
+    соответствующую группу Troyka-контактов.
+  </div>
+</span>
+
+<h2>
+  <span class="header-color">Подключение нагрузки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Шаговый мотор подключается к клеммнику Vout.</p>
+</span>
+
+<h2>
+  <span class="header-color">Питание</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>На плате расположено два контура питания:</p>
+  <ul>
+    <li>
+      Силовой контур — для питания мотора от силовой части микросхемы H-моста L293D. Силовое питание подключается через
+      клеммник Vin в диапазоне 5–24 В.
+    </li>
+    <li>
+      Цифровой контур — для питания вспомогательной цифровой логики управления микросхемы H-моста L293D и светодиодов
+      индикации. Цифровое питание берется с управляющей платы и поступает на драйвер через Troyka-контакты.
+    </li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Для программной работы с драйвером шагового двигателя, используйте библиотеки и функции, которые облегчают
+    составления кода программы.
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/"
+        >Функция управление пином ввода-вывода для Arduino</a
+      >
+    </li>
+    <li><a href="http://wiki.amperka.ru/js:stepper">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">
+    Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы
+    <a href="https://mikronika.net/product/amperka-kit-matryoshka-x">Матрёшка</a> и
+    <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.
+  </div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>3× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Драйвер шагового двигателя / Troyka-модуль / AMP-B028</li>
+    <li>Чип: L293D</li>
+    <li>
+      Цифровая часть:
+      <ul>
+        <li>Входное напряжение питания Vcc1: 3,3–5 В</li>
+        <li>Потребляемый ток Icc1: до 50 мА</li>
+        <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+        <li>Программный интерфейс: цифровой бинарный сигнал</li>
+      </ul>
+    </li>
+    <li>
+      Силовая часть:
+      <ul>
+        <li>Входное напряжение питания Vcc2: 5–24 В</li>
+        <li>Потребляемый ток Icc2: до 600 мА</li>
+        <li>Количество подключаемых моторов: 1 шаговый</li>
+        <li>Разъём подключения мотора: клеммник под винт</li>
+        <li>Разъём подключения питания: клеммник под винт</li>
+      </ul>
+    </li>
+    <li>
+      Логическое напряжение уровней:
+      <ul>
+        <li>Вход: 3,3–5 В</li>
+        <li>Выход: 3,3–5 В</li>
+      </ul>
+    </li>
+    <li>Размеры: 50,8×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li>
+      <a href="http://wiki.amperka.ru/продукты:troyka:stepper">Руководство по использованию</a>
+    </li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/js:stepper">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      <a
+        href="https://mikronika.net/image/catalog/product/amperka-troyka-driver-motor-stepper/media/l293d-datasheet.pdf"
+        >Datasheet на чип L293D</a
+      >
+    </li>
+  </ul>
+</span>

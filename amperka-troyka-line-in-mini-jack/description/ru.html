@@ -1,0 +1,187 @@
+<!--
+h1: Аудиовход / Мини-джек TRS 3.5 mm / Troyka-модуль
+h1-detail: Аудиовход / Мини-джек TRS 3.5 mm / Troyka-модуль
+short: Линейный вход для микрофонов, плееров и гарнитур
+title: Купить аудиовход «Мини-джек TRS 3.5 mm» в Киеве и Украине
+description: Модуль поможет подключить микрофон, музыкальный центр или компьютер к микроконтроллеру, например Arduino или Espruino.
+-->
+
+<span class="font-family-size-head">
+  <p>
+    Собрать эквалайзер из светодиодной ленты или научить робота выполнять команды поможет модуль линейного аудиовхода.
+    Подключить микрофон, музыкальный центр или компьютер легко — на модуле предусмотрен разъём под стандартный
+    мини-джек.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/wM4fNU89LKA" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Аудиосигнал в проводах — это переменное напряжение. Часть сигнала имеет положительное напряжение, а другая —
+    отрицательное. Микроконтроллер может оцифровывать только положительный сигнал.
+  </p>
+
+  <p>
+    Модуль аудиовхода поднимает нулевое значение аудиосигнала до середины напряжения питания, и дальнейшие изменения
+    напряжения происходят уже относительно этого значения — аудиосигнал оцифровывается полностью.
+  </p>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-line-in-mini-jack/media/amperka-troyka-line-in-mini-jack.1.png"
+      style="max-width: 50%"
+      class="img-center"
+    />
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Модуль является преобразователем аудио интерфейса с линией на вход и на выход.</p>
+</span>
+
+<h3>
+  <span class="header-color">Входной сигнал</span>
+</h3>
+
+<span class="font-family-size-article">
+  <p>Источник звука, например плеер или телефон, подключается к модулю через TRS разъём 3,5 мм (мини-джек).</p>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-line-in-mini-jack/media/amperka-troyka-line-in-mini-jack.2.png"
+      style="max-width: 75%"
+      class="img-center"
+    />
+  </p>
+  <div class="wrap-info" style="max-width: 80%">
+    Входящий сигнал можно считывать в стерео (два пина) или моно (один пин) режиме. Для последнего замкните джампером
+    контакты объединения каналов — это позволит передать один сигнал сразу на два входных канала модуля.
+  </div>
+</span>
+
+<h3>
+  <span class="header-color">Выходной сигнал</span>
+</h3>
+
+<span class="font-family-size-article">
+  <p>Обработанный сигнал сниматься с двух групп Troyka-контактов для последующего использования с микроконтроллером.</p>
+</span>
+
+<h4>
+  <span class="header-color">Первая группа</span>
+</h4>
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      Сигнальный (L) — аудиовыход левого канала. Используется для передачи звукового сигнала в микроконтроллер.
+      Подключите к аналоговому входу микроконтроллера.
+    </li>
+    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
+    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
+  </ul>
+</span>
+
+<h4>
+  <span class="header-color">Вторая группа</span>
+</h4>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      Сигнальный (R) — аудиовыход правого канала. Используется для передачи звукового сигнала в микроконтроллер.
+      Подключите к аналоговому входу микроконтроллера.
+    </li>
+  </ul>
+  <p>
+    При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или
+    <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться
+    от проводов, возьмите
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.
+  </p>
+
+  <p>
+    Также модуль физически совместим с
+    <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>На выходе модуля два аналаговых сигнала. Используйте встроенные функции для считывания данных.</p>
+
+  <ul>
+    <li>
+      <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/">Функция для Arduino</a>
+    </li>
+    <li><a href="http://wiki.amperka.ru/js:builtins#функции_работы_с_пинами">Функция для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">
+    Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы
+    <a href="https://mikronika.net/product/amperka-kit-matryoshka-x">Матрёшка</a> и
+    <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.
+  </div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>2× Трёхпроводной шлейф</li>
+    <li>1× Джампер</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Интерфейс на вход: два аудио сигнала с плеера или телефона (TRS-разъём)</li>
+    <li>Интерфейс на выход: два аудио сигнала, подняты относительно середины напряжения (Troyka-контакты)</li>
+    <li>Режим работы: моно/стерео</li>
+    <li>Рабочее напряжение: 3,3–5 В</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li>
+      <a href="http://wiki.amperka.ru/продукты:troyka-line-in">Руководство по использованию, примеры и документация</a>
+    </li>
+  </ul>
+</span>

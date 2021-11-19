@@ -1,0 +1,215 @@
+<!--
+h1: Зуммер / Troyka-модуль
+h1-detail: Зуммер / Troyka-модуль
+short: Модуль с пьезодинамиком для простой звуковой индикации
+title: Зуммер пищалка для Arduino купить в Украине
+description: Динамик для воспроизведение тревожных сигналов, писков и музыкальных рингтонов. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Зуммер / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>
+    Используйте зуммер из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> для
+    воспроизведения простых тревожных сигналов и писков. Вам не придётся возиться с пайкой и мелкими компонентами на
+    макетке — всё уже готово.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<h3>
+  <span class="header-color">Зуммер в мини-проекте «датчика дыма»</span>
+</h3>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/0f3-JNnmExg" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Зуммер основан на пьезопищалке
+    <a href="https://mikronika.net/image/catalog/product/amperka-troyka-buzzer/media/hpm14a-datasheet.pdf">HPM14A</a>,
+    которая обладает пьезоэлектрическими свойствами:
+  </p>
+  <ul>
+    <li>
+      Прямой пьезоэлектрический эффект — при механической деформации мембраны на её концах вырабатывается электричество.
+      Используется в
+      <a href="https://mikronika.net/product/amperka-troyka-sensor-vibration">датчике вибрации</a>.
+    </li>
+    <li>
+      Обратный пьезоэлектрический эффект — под действием электрического поля возникает механическое движение мембраны,
+      которое и вызывает слышимые нами звуковые волны. Используется в нашей пищалке.
+    </li>
+  </ul>
+
+  <p>
+    <img
+      alt=""
+      src="https://mikronika.net/image/catalog/product/amperka-troyka-buzzer/media/amperka-troyka-buzzer.1.png"
+      style="max-width: 100%"
+      class="img-center"
+    />
+  </p>
+
+  <p>
+    Пищалка выдаст тревожные звуки при срабатывании сигнализации или воспроизведёт победную мелодию после выигрыша в
+    игре. В паре со
+    <a href="https://mikronika.net/product/amperka-troyka-led-pirania">светодиодом</a> вы получите индикацию, которая не
+    останется незамеченной.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Зуммер подключается к
+    <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через группу
+    из трёх контактов.
+  </p>
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Пин управления пищалкой</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или
+    <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров
+    <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль
+    физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>
+    Для работы со звуком используйте библиотеки и функции для облегчения написания кода программ. Они скрывают в себе
+    все тонкости общения с модулем.
+  </p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/">Функция для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:buzzer">Библиотека для Espruino</a></li>
+    <li>
+      <a href="http://wiki.amperka.ru/js:ringtone">Библиотека для Espruino, для проигрывания мелодий в формате RTTTL</a>
+    </li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 85%">
+    Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы
+    <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и
+    <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.
+  </div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>1× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Зуммер / Troyka-модуль / AMP-B008</li>
+    <li>Пьезоизлучатель: HPM14A</li>
+    <li>Входное напряжение питания Vcc: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: до 5 мкА</li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: цифровой сигнал / ШИМ</li>
+    <li>
+      Логическое напряжение уровней:
+      <ul>
+        <li>Вход: 3,3–5 В</li>
+        <li>Выход: не используется</li>
+      </ul>
+    </li>
+    <li>Частота: 4 кГц</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/">Функция для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:buzzer">Библиотека для Espruino</a></li>
+    <li>
+      <a href="http://wiki.amperka.ru/js:ringtone">Библиотека для Espruino, для проигрывания мелодий в формате RTTTL</a>
+    </li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      <a href="https://mikronika.net/image/catalog/product/amperka-troyka-buzzer/media/hpm14a-datasheet.pdf"
+        >Datasheet на HPM14A</a
+      >
+    </li>
+  </ul>
+</span>
