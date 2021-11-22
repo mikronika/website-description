@@ -7,10 +7,7 @@ description: Сенсор газа MQ-8 поможет обнаружить ут
 -->
 
 <span class="font-family-size-head">
-  <p>
-    На вашем производстве применяется водород или экспериментируете с топливными элементами в домашних условиях. Вы
-    хотите повторить судьбу «Гинденбурга»? Избежать взрыва поможет высоко-специфичный датчик водорода MQ-8.
-  </p>
+  <p>На вашем производстве применяется водород или экспериментируете с топливными элементами в домашних условиях. Вы хотите повторить судьбу «Гинденбурга»? Избежать взрыва поможет высоко-специфичный датчик водорода MQ-8.</p>
 </span>
 
 <h2>
@@ -24,63 +21,47 @@ description: Сенсор газа MQ-8 поможет обнаружить ут
 <h2><span class="header-color">Общие сведения</span></h2>
 
 <span class="font-family-size-article">
-  <p>
-    Датчик построен на базе полупроводникового газоанализатора
-    <a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/mq8-datasheet.pdf">MQ-8</a>. На выходе сенсора аналоговый сигнал,
-    пропорциональный содержанию газов в окружающей среде.
-  </p>
+  <p>Датчик построен на базе полупроводникового газоанализатора <a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/mq8-datasheet.pdf">MQ-8</a>. На выходе сенсора аналоговый сигнал, пропорциональный содержанию газов в окружающей среде.</p>
 
-  <p>
-    Внутри датчика расположен чувствительный элемент, который состоит из керамической трубки с покрытием Al2O3 (оксид
-    алюминия) и нанесенного на неё чувствительного слоя SnO2 (диоксида олова). Внутри трубки проходит нагревательный
-    элемент, который нагревает чувствительный слой до температуры, при которой он начинает реагировать на определяемый
-    газ. Чувствительность к разным газам достигается варьированием состава примесей в чувствительном слое.
-  </p>
+  <p>Внутри датчика расположен чувствительный элемент, который состоит из керамической трубки с покрытием Al2O3 (оксид алюминия) и нанесенного на неё чувствительного слоя SnO2 (диоксида олова). Внутри трубки проходит нагревательный элемент, который нагревает чувствительный слой до температуры, при которой он начинает реагировать на определяемый газ. Чувствительность к разным газам достигается варьированием состава примесей в чувствительном слое.</p>
 
-  <p>
-    <img
-      alt=""
-      src="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/amperka-troyka-sensor-gas-mq8.1.png"
-      style="max-width: 50%;"
-      class="img-center"
-    />
-  </p>
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq8/media/amperka-troyka-sensor-gas-mq8.1.png" style="max-width: 50%" class="img-center" /></p>
 </span>
 
-<h2><span class="header-color">Подключение</span></h2>
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
 
 <span class="font-family-size-article">
-  <p>
-    В общем случае датчик подключается к
-    <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через два трёхконтактных разъёма,
-    по первому осуществляется питание датчика и снятие показаний сенсора, по второму — подается напряжение на
-    нагревательный элемент сенсора. Если нет нужды в ручном управлении нагревателем, оставьте только первый шлейф, а
-    питание на нагреватель подайте установкой джампера.
-  </p>
+  <p>В общем случае датчик подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через два трёхконтактных разъёма, по первому осуществляется питание датчика и снятие показаний сенсора, по второму — подается напряжение на нагревательный элемент сенсора. Если нет нужды в ручном управлении нагревателем, оставьте только первый шлейф, а питание на нагреватель подайте установкой джампера.</p>
+</span>
 
-  <h3><span class="header-color">Первая группа</span></h3>
+<h3>
+  <span class="header-color">Первая группа</span>
+</h3>
+
+<span class="font-family-size-article">
   <ul>
     <li>Сигнальный (S) — выходной сигнал сенсора. Подключите к аналоговому входу микроконтроллера.</li>
     <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
     <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
   </ul>
-  <h3><span class="header-color">Вторая группа</span></h3>
+</span>
+
+<h3>
+  <span class="header-color">Вторая группа</span>
+</h3>
+
+<span class="font-family-size-article">
   <ul>
     <li>Сигнальный (E) — управление питанием нагревателя. Подключите к цифровому пину микроконтроллера.</li>
     <li>Питание (H) — питание нагревателя. Соедините с пином 5V.</li>
     <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
   </ul>
 
-  <p>
-    При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или
-    <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте
-    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от
-    проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.
-  </p>
-  <p>
-    Также модуль физически совместим с
-    <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.
-  </p>
+  <p>При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.</p>
+
+  <p>Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
 </span>
 
 <h2>
@@ -88,11 +69,7 @@ description: Сенсор газа MQ-8 поможет обнаружить ут
 </h2>
 
 <span class="font-family-size-article">
-  <p>
-    Сенсор на выходе выдаёт значения вредных газов в абстрактных единицах. Используйте библиотеки для перевода данных из
-    абстрактных значений в
-    <span class="font-family-monospaced">ppm.</span>
-  </p>
+  <p>Сенсор на выходе выдаёт значения вредных газов в абстрактных единицах. Используйте библиотеки для перевода данных из абстрактных значений в <span class="font-family-monospaced">ppm.</span></p>
 
   <ul>
     <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>

@@ -7,13 +7,7 @@ description: Транзистор пригодится для управлени
 -->
 
 <span class="font-family-size-head">
-  <p>
-    Силовой ключ из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> подойдёт для коммутации
-    цепей с большим постоянным током. Модуль пригодится в создании автополива для управления помпой, оформлении
-    помещений для установки яркости светодиодной ленты и в охранных системах для открытия/закрытия электронных замков.
-    Вам не придётся возиться с пайкой, макетной платой и необходимой обвязкой для работы полевого транзистора — всё уже
-    готово.
-  </p>
+  <p>Силовой ключ из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> подойдёт для коммутации цепей с большим постоянным током. Модуль пригодится в создании автополива для управления помпой, оформлении помещений для установки яркости светодиодной ленты и в охранных системах для открытия/закрытия электронных замков. Вам не придётся возиться с пайкой, макетной платой и необходимой обвязкой для работы полевого транзистора — всё уже готово.</p>
 </span>
 
 <h2>
@@ -29,28 +23,13 @@ description: Транзистор пригодится для управлени
 </h2>
 
 <span class="font-family-size-article">
-  <p>
-    Управляющие платформы, например <a href="https://mikronika.net/collection/arduino">Arduino</a> или
-    <a href="https://mikronika.net/collection/iskra">Espruino</a>, не могут напрямую управлять мощной нагрузкой: выходы
-    микроконтроллера могут отдать максимум до нескольких десятков миллиампер. Если вы хотите рулить светодиодной лентой,
-    погружной помпой или мотором — вам поможет модуль с транзистором на борту.
-  </p>
+  <p>Управляющие платформы, например <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Espruino</a>, не могут напрямую управлять мощной нагрузкой: выходы микроконтроллера могут отдать максимум до нескольких десятков миллиампер. Если вы хотите рулить светодиодной лентой, погружной помпой или мотором — вам поможет модуль с транзистором на борту.</p>
 
-  <p>
-    Полевой транзистор поддерживает ШИМ с помощью которого можно регулировать скорость вращения двигателя или яркость
-    свечения светодиодной ленты.
-  </p>
+  <p>Полевой транзистор поддерживает ШИМ с помощью которого можно регулировать скорость вращения двигателя или яркость свечения светодиодной ленты.</p>
 </span>
 
 <span class="font-family-size-article">
-  <p>
-    Силовой ключ выполнен на полевом транзисторе с N-каналом
-    <a
-      href="https://mikronika.net/image/catalog/product/amperka-troyka-mosfet-n-channel-v3/media/irlr8113-datasheet.pdf"
-      >IRLR8113</a
-    >. Вся электронная обвязка необходимая для управления ключом уже встроена в модуль. На модуле расположен
-    информационный светодиод, который горит — когда транзистор открыт.
-  </p>
+  <p>Силовой ключ выполнен на полевом транзисторе с N-каналом <a href="https://mikronika.net/image/catalog/product/amperka-troyka-mosfet-n-channel-v3/media/irlr8113-datasheet.pdf">IRLR8113</a>. Вся электронная обвязка необходимая для управления ключом уже встроена в модуль. На модуле расположен информационный светодиод, который горит — когда транзистор открыт.</p>
 </span>
 
 <h2>
@@ -62,11 +41,7 @@ description: Транзистор пригодится для управлени
 </h3>
 
 <span class="font-family-size-article">
-  <p>
-    Нагрузка подключается своими контактами к колодкам под винт <span class="font-family-monospaced">L</span>.
-    Отрицательный контакт нагрузки подключается к контакту <span class="font-family-monospaced">L-</span>, а
-    положительный — к контакту <span class="font-family-monospaced">L+</span>.
-  </p>
+  <p>Нагрузка подключается своими контактами к колодкам под винт <span class="font-family-monospaced">L</span>. Отрицательный контакт нагрузки подключается к контакту <span class="font-family-monospaced">L-</span>, а положительный — к контакту <span class="font-family-monospaced">L+</span>.</p>
 </span>
 
 <h3>
@@ -74,18 +49,9 @@ description: Транзистор пригодится для управлени
 </h3>
 
 <span class="font-family-size-article">
-  <p>
-    Источник питания нагрузки подключается своими контактами к колодкам под винт
-    <span class="font-family-monospaced">P</span>. Положительный контакт источника питания подключается к контакту
-    <span class="font-family-monospaced">P+</span>, а отрицательный — к контакту
-    <span class="font-family-monospaced">P-</span>.
-  </p>
+  <p>Источник питания нагрузки подключается своими контактами к колодкам под винт <span class="font-family-monospaced">P</span>. Положительный контакт источника питания подключается к контакту <span class="font-family-monospaced">P+</span>, а отрицательный — к контакту <span class="font-family-monospaced">P-</span>.</p>
 
-  <div class="wrap-info" style="max-width: 85%">
-    Силовой ключ выполнен на транзисторе с N-каналом, поэтому контакты <span class="font-family-monospaced">L+</span> и
-    <span class="font-family-monospaced">P+</span> на модуле объединены. Силовым ключом коммутируется связь между
-    контактами <span class="font-family-monospaced">L-</span> и <span class="font-family-monospaced">P-</span>.
-  </div>
+  <div class="wrap-info" style="max-width: 85%">Силовой ключ выполнен на транзисторе с N-каналом, поэтому контакты <span class="font-family-monospaced">L+</span> и <span class="font-family-monospaced">P+</span> на модуле объединены. Силовым ключом коммутируется связь между контактами <span class="font-family-monospaced">L-</span> и <span class="font-family-monospaced">P-</span>.</div>
 </span>
 
 <h3>
@@ -93,10 +59,7 @@ description: Транзистор пригодится для управлени
 </h3>
 
 <span class="font-family-size-article">
-  <p>
-    Модуль силовой ключ подключается к
-    <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через три провода.
-  </p>
+  <p>Модуль силовой ключ подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через три провода.</p>
 
   <ul>
     <li>Сигнальный (S) — управляющий контакт силового ключа. Подключите к цифровому пину микроконтроллера.</li>
@@ -104,23 +67,11 @@ description: Транзистор пригодится для управлени
     <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
   </ul>
 
-  <p>
-    При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или
-    <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте
-    <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться
-    от проводов, возьмите
-    <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.
-  </p>
-  <p>
-    Также модуль физически совместим с
-    <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.
-  </p>
+  <p>При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.</p>
 
-  <div class="wrap-attention" style="max-width: 85%">
-    Если вы сомневаетесь как подключить к модулю нагрузку, остановитесь: вы можете устроить пожар или убить себя.
-    Убедитесь, что у вас в голове — кристальное понимание принципа работы силового ключа и опасностей, которые связаны с
-    высоким напряжением.
-  </div>
+  <p>Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+
+  <div class="wrap-attention" style="max-width: 85%">Если вы сомневаетесь как подключить к модулю нагрузку, остановитесь: вы можете устроить пожар или убить себя. Убедитесь, что у вас в голове — кристальное понимание принципа работы силового ключа и опасностей, которые связаны с высоким напряжением.</div>
 </span>
 
 <h2>
@@ -128,33 +79,14 @@ description: Транзистор пригодится для управлени
 </h2>
 
 <span class="font-family-size-article">
-  <p>
-    Управление силовым ключом аналогично работе
-    <a href="https://mikronika.net/product/amperka-troyka-led-pirania">со светодиодным модулем</a>. Транзистор
-    открывается при подаче высокого уровня на сигнальный пин и закрывается — при поступлении низкого уровня. Модуль
-    также поддерживает ЦАП или ШИМ для плавной регулировки параметров нагрузки. Но вы можете не думать о сложных фразах
-    и выражениях: используйте встроенные библиотеки или функции для общения с силовым ключом.
-  </p>
+  <p>Управление силовым ключом аналогично работе <a href="https://mikronika.net/product/amperka-troyka-led-pirania">со светодиодным модулем</a>. Транзистор открывается при подаче высокого уровня на сигнальный пин и закрывается — при поступлении низкого уровня. Модуль также поддерживает ЦАП или ШИМ для плавной регулировки параметров нагрузки. Но вы можете не думать о сложных фразах и выражениях: используйте встроенные библиотеки или функции для общения с силовым ключом.</p>
 
   <ul>
-    <li>
-      Функции для Arduino:
-      <a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/"
-        >включения / отключения</a
-      >
-      и
-      <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/"
-        >плавного включения транзистора.</a
-      >
-    </li>
+    <li>Функции для Arduino: <a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">включения / отключения</a> и <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">плавного включения транзистора.</a></li>
     <li><a href="http://wiki.amperka.ru/js:led">Библиотека для Espruino.</a></li>
   </ul>
 
-  <div class="wrap-info" style="max-width: 85%">
-    Силовой ключ способен коммутировать нагрузку только с постоянным напряжением. Если вам необходимо управлять
-    приборами питающимися от переменного напряжения, воспользуйтесь модулем
-    <a href="https://mikronika.net/product/amperka-troyka-relay">реле</a>.
-  </div>
+  <div class="wrap-info" style="max-width: 85%">Силовой ключ способен коммутировать нагрузку только с постоянным напряжением. Если вам необходимо управлять приборами питающимися от переменного напряжения, воспользуйтесь модулем <a href="https://mikronika.net/product/amperka-troyka-relay">реле</a>.</div>
 </span>
 
 <!--Комплектация-->
@@ -194,11 +126,6 @@ description: Транзистор пригодится для управлени
   <ul>
     <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
     <li><a href="http://wiki.amperka.ru/js:led">Библиотека для Espruino</a></li>
-    <li>
-      <a
-        href="https://mikronika.net/image/catalog/product/amperka-troyka-mosfet-n-channel-v3/media/irlr8113-datasheet.pdf"
-        >Datasheet на транзистор IRLR8113</a
-      >
-    </li>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-mosfet-n-channel-v3/media/irlr8113-datasheet.pdf">Datasheet на транзистор IRLR8113</a></li>
   </ul>
 </span>
