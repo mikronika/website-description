@@ -1,10 +1,14 @@
 <!--
 h1: Датчик углеводородного газа MQ-6 / Troyka-модуль
 h1-detail: Датчик углеводородного газа MQ-6 / Troyka-модуль
-short: Датчик определяет концентрацию пропана и бутана
-title: Купить датчик углеводородного газа MQ-6 в Украине
-description: Сенсор MQ-6 сообщит об утечке газа и позволит сэкономить вам на покупке новой машины или дачи.
+short: Сенсор для определения концентрации пропана и бутана
+title: Датчик углеводородного газа MQ-6 купить в Украине
+description: Сенсор MQ6 сообщит об утечке вредных газов и возможно спасёт вам жизнь. Описание, характеристики, цена и фото на сайте.
 -->
+
+<div class="h1-detail">
+  <span class="header-color">Датчик углеводородного газа MQ-6 / Troyka-модуль</span>
+</div>
 
 <span class="font-family-size-head">
   <p>Бытовые плиты и автомобили с газобаллонным оборудованием требуют постоянного внимания, утечки пропана и бутана чреваты большими неприятностями. Датчик MQ-6 сообщит об утечке и позволит сэкономить вам на покупке новой машины или дачи.</p>
@@ -31,23 +35,57 @@ description: Сенсор MQ-6 сообщит об утечке газа и по
 </span>
 
 <h2>
-  <span class="header-color">Подключение</span>
+  <span class="header-color">Особенности</span>
 </h2>
 
 <span class="font-family-size-article">
-  <p>В общем случае датчик подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через два трёхконтактных разъёма, по первому осуществляется питание датчика и снятие показаний сенсора, по второму — подается напряжение на нагревательный элемент сенсора. Если нет нужды в ручном управлении нагревателем, оставьте только первый шлейф, а питание на нагреватель подайте установкой джампера.</p>
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Чувствительность ко всем вредным газам.</li>
+    <li>Возможность отдельно управлять нагревателем.</li>
+  </ul>
 </span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<p>Датчик газа подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> двумя способами:</p>
+
+<ol>
+  <li>Штатный способ. Если нет нужды в управлении нагревателем датчика. Для коммуникации используйте только первую группу Troyka-контактов.</li>
+  <li>Расширенный способ. Если есть нужда в управлении нагревателем. Для коммуникации используйте первую и вторую группу Troyka-контактов.</li>
+</ol>
 
 <h3>
   <span class="header-color">Первая группа</span>
 </h3>
 
 <span class="font-family-size-article">
-  <ul>
-    <li>Сигнальный (S) — выходной сигнал сенсора. Подключите к аналоговому входу микроконтроллера.</li>
-    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
-    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
-  </ul>
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Выходной сигнал сенсора</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера с поддержкой АЦП.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
 </span>
 
 <h3>
@@ -55,15 +93,34 @@ description: Сенсор MQ-6 сообщит об утечке газа и по
 </h3>
 
 <span class="font-family-size-article">
-  <ul>
-    <li>Сигнальный (E) — управление питанием нагревателя. Подключите к цифровому пину микроконтроллера.</li>
-    <li>Питание (H) — питание нагревателя. Соедините с пином 5V.</li>
-    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
-  </ul>
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">E</td>
+        <td>Управление питанием нагревателя</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера с поддержкой АЦП.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">H</td>
+        <td>Питание нагревателя</td>
+        <td>Подключите к питанию 5 вольт.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
 
-  <p>При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.</p>
-
-  <p>Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+<span class="font-family-size-article">
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT, который подарит малине пины с АЦП. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
 </span>
 
 <h2>
@@ -71,12 +128,14 @@ description: Сенсор MQ-6 сообщит об утечке газа и по
 </h2>
 
 <span class="font-family-size-article">
-  <p>Сенсор на выходе выдаёт значения вредных газов в абстрактных единицах. Используйте библиотеки для перевода данных из абстрактных значений в <span class="font-family-monospaced">ppm.</span></p>
+  <p>Для программной работы с датчиком используйте библиотеки, которые облегчают составления кода программы.</p>
 
   <ul>
     <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>
     <li><a href="http://wiki.amperka.ru/js:gas-sensor">Библиотека для Espruino</a></li>
   </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.</div>
 </span>
 
 <!--Комплектация-->
@@ -99,13 +158,16 @@ description: Сенсор MQ-6 сообщит об утечке газа и по
 
 <span class="font-family-size-article">
   <ul>
+    <li>Модель: Датчик углеводородного газа MQ-6 / Troyka-модуль / AMP-B054</li>
     <li>Газоанализатор: MQ-6</li>
-    <li>Рекомендуемый газ: пропан, изобутан</li>
-    <li>Выходной интерфейс: аналоговый сигнал</li>
-    <li>Габариты: 25,4×25,4 мм</li>
-    <li>Напряжение питания нагревателя: 5 В</li>
-    <li>Напряжение питания датчика: 3,3–5 В</li>
-    <li>Потребляемый ток: 150 мА</li>
+    <li>Входное напряжение питания датчика Vcc1: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: до 20 мА</li>
+    <li>Входное напряжение питания нагревателя Vcc2: 5 В</li>
+    <li>Потребляемый ток Icc2: до 150 мА</li>
+    <li>Рекомендуемые газы: пропан, изобутан</li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: аналоговый сигнал</li>
+    <li>Выходное напряжение: 0–Vcc В</li>
     <li>Габариты: 25,4×25,4 мм</li>
   </ul>
 </span>
@@ -117,10 +179,28 @@ description: Сенсор MQ-6 сообщит об утечке газа и по
 
 <span class="font-family-size-article">
   <ul>
-    <li><a href="http://wiki.amperka.ru/продукты:mq6">Руководство по использованию, документация и примеры</a></li>
     <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/продукты:mq6">Руководство по использованию</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
     <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>
     <li><a href="http://wiki.amperka.ru/js:gas-sensor">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
     <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq6/media/mq6-datasheet.pdf">Datasheet на датчик MQ-6</a></li>
   </ul>
 </span>
