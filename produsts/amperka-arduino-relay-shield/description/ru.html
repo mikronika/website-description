@@ -1,7 +1,7 @@
 <!-- 
 h1: Amperka Relay Shield
 h1-detail: Плата расширения Amperka Relay Shield
-short: Четыре реле на одной плате расширения
+short: Плата расширения с четырьмя реле на борту
 title: Relay Shield от Амперки купить в Украине
 description: Плата расширения в помощь Arduino для управления приборами от бытовой сети 220 вольт. Описание, характеристики, цена и фото на сайте.
 -->
@@ -39,10 +39,9 @@ description: Плата расширения в помощь Arduino для уп
 </h2>
 
 <span class="font-family-size-article">
-  <p>Relay Shield — плата расширения для <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a>, на которой расположены четыре независимых реле <a href="https://mikronika.net/image/catalog/product/amperka-arduino-relay-shield/media/g5sb-datasheet.pdf">G5SB-14</a>.</p>
   <ul>
     <li>Совместимость со всеми платами форм-фактора Arduino R3.</li>
-    <li>Четыре независимых реле.</li>
+    <li>Четыре независимых реле <a href="https://mikronika.net/image/catalog/product/amperka-arduino-relay-shield/media/g5sb-datasheet.pdf">G5SB-14</a>.</li>
     <li>Возможность смены контактов управления на каждом канале.</li>
     <li>Светодиодная индикация по каждому каналу.</li>
   </ul>
@@ -114,14 +113,28 @@ description: Плата расширения в помощь Arduino для уп
 
   <p>
     Если на управляющей обмотке реле отсутствует напряжение, то между нормально замкнутым
-    <span class="font-family-monospaced">NC</span> и коммутируемым <span class="font-family-monospaced">COM</span> контактами есть электрическая связь, а между нормально разомкнутым <span class="font-family-monospaced">NO</span> и коммутируемым <span class="font-family-monospaced">COM</span> — нет. При подаче напряжения на управляющую обмотку нормально разомкнутый <span class="font-family-monospaced">NO</span> контакт замыкается, а нормально замкнутый
-    <span class="font-family-monospaced">NC</span> — размыкается.
+    <span class="font-family-monospaced">NC</span> и коммутируемым <span class="font-family-monospaced">COM</span> контактами есть электрическая связь, а между нормально разомкнутым <span class="font-family-monospaced">NO</span> и коммутируемым <span class="font-family-monospaced">COM</span> — нет. При подаче напряжения на управляющую обмотку нормально разомкнутый <span class="font-family-monospaced">NO</span> контакт замыкается, а нормально замкнутый <span class="font-family-monospaced">NC</span> — размыкается.
   </p>
   <div class="wrap-attention" style="max-width: 85%">
     Если вы сомневаетесь как подключить к реле электроприбор, работающий от общей сети
     <span class="font-family-monospaced">220 В</span>
     и у вас есть сомнения, вопросы на тему того как это делается, остановитесь: вы можете устроить пожар или убить себя. Убедитесь, что у вас в голове — кристальное понимание принципа работы реле и опасностей, которые связаны с высоким напряжением.
   </div>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Relay Shield общается с микроконтроллером через цифровой сигнал. Обмотка реле включается при подаче высокого уровня на сигнальный пин и отключается — при поступлении низкого уровня. Для программной работы с платой расширения используйте библиотеки и функции, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">Функция включения и отключения для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino.</a></li>
+  </ul>
+
+  <div class="wrap-info" style="max-width: 85%">Реле не поддерживает ШИМ-модуляцию! Если вам необходимо плавно управлять нагрузкой, воспользуйтесь <a href="https://mikronika.net/product/amperka-troyka-mosfet-n-channel">силовым ключом</a> для коммутации постоянного напряжения и твердотельным реле — для переменного.</div>
 </span>
 
 <!--Комплектация-->
