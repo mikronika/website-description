@@ -1,7 +1,205 @@
 <!--
-h1: RobotDyn преобразователь интерфейсов LCD / Parallel — I²C
-h1-detail: RobotDyn преобразователь интерфейсов LCD / Parallel — I²C
-short: Переходник для текстовых экранов с параллельного интерфейса на i²C
-title: Купить RobotDyn преобразователь PCF8574T в Украине
-description: Адаптер для текстовых экранов с параллельного интерфейса на i²C. Описание, характеристики, цена и фото на сайте.
+h1: RobotDyn преобразователь интерфейсов LCD (Parallel — I²C)
+short: Переходник для текстовых экранов с параллельного интерфейса на I²C
+title: RobotDyn преобразователь интерфейсов LCD (Parallel — I²C) купить в Украине
+description: Модуль для управления LCD дисплеями 1602 / 2004 по интерфейсу I²C. Описание, характеристики, цена и фото на сайте.
+url: robotdyn-converter-display-parallel-to-i2c
 -->
+
+<h1>
+  <span class="header-color">RobotDyn преобразователь интерфейсов LCD (Parallel — I²C)</span>
+</h1>
+
+<span class="font-family-size-head">
+  <p>Хотите подключить текстовый экран к Arduino или Raspberry Pi без вермишели из проводов? Рекомендуем воспользоваться преобразователем интерфейсов, который позволит подключить дисплей к управляющей плате всего по двум проводам и, заодно, сэкономит выводы микроконтроллера.</p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Управления текстовыми дисплеями по шине I²C.</li>
+    <li>Использование всего двух сигнальных проводов для соединения с микроконтроллером.</li>
+    <li>Миниатюрные размеры.</li>
+  </ul>
+</span>
+
+<p><img alt="" src="https://mikronika.net/image/catalog/product/robotdyn-converter-parallel-to-i2c/media/robotdyn-converter-parallel-to-i2c.1.png" style="max-width: 100%" class="img-center" /></p>
+
+<p>Плата выполнена на интерфейсной микросхеме PCF8574T. Для регулировки контрастности дисплея на адаптере предусмотрен потенциометр. Также на плате расположен светодиод Power для индикации питания модуля.</p>
+
+<h2>
+  <span class="header-color">Подключение дисплея</span>
+</h2>
+
+<p><img alt="" src="https://mikronika.net/image/catalog/product/robotdyn-converter-parallel-to-i2c/media/robotdyn-converter-parallel-to-i2c.2.png" style="max-width: 100%" class="img-center" /></p>
+
+<p>Для подключения дисплея предусмотрены контактные штыри PLS-16:</p>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">GND</td>
+        <td>Общая земля</td>
+        <td>Подключите к земле дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">VCC</td>
+        <td>Питание</td>
+        <td>Подключите к питанию дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">VO</td>
+        <td>Контрастность экрана</td>
+        <td>Подключите к пину управления контрастностью дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">RS</td>
+        <td>Линия выбора регистра команд / данных</td>
+        <td>Подключите к пину выбора регистра дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">RW</td>
+        <td>Линия выбора направления передачи</td>
+        <td>Подключите к пину выбора режима записи или чтения дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">E</td>
+        <td>Линия тактирования</td>
+        <td>Подключите к пину тактирования дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">D0-D7</td>
+        <td>Линии данных</td>
+        <td>Подключите к пинам D0-D7 дисплея соответственно.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">А</td>
+        <td>Анод питания подсветки «+»</td>
+        <td>Подключите к плюсовому пину подсветки дисплея.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">К</td>
+        <td>Катод питания подсветки «–»</td>
+        <td>Подключите к минусовому пину подсветки дисплея.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<p>Для подключения контроллера на преобразователе расположены угловые контактные штыри PLS-4R:</p>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">GND</td>
+        <td>Общая земля</td>
+        <td>Подключите к земле контроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">VCC</td>
+        <td>Питание дисплея</td>
+        <td>Подключите к питанию 5V контроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">SDA</td>
+        <td>Ввод-вывод линии данных шины I²C</td>
+        <td>Подключите к пину SDA контроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">SCL</td>
+        <td>Ввод-вывод линии тактирования шины I²C</td>
+        <td>Подключите к пину SCL контроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Для программной работы с модулем используйте библиотеки и функции, которые облегчают составление кода программы:</p>
+  <ul>
+    <li><a href="https://github.com/fmalpartida/New-LiquidCrystal">Библиотека для Arduino</a>.</li>
+    <li><a href="https://www.espruino.com/I2C">Библиотека для Espruino</a>.</li>
+  </ul>
+</span>
+
+<!--Комплектация-->
+
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× RobotDyn плата-модуль</li>
+    <li>1× Контактные штыри PLS-16</li>
+    <li>1× Контактные штыри угловые PLS-4R</li>
+    <li>1× Контактные штыри угловые PLS-2R</li>
+    <li>1× Джампер</li>
+  </ul>
+</span>
+<!--Характеристики-->
+
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: RobotDyn преобразователь интерфейсов LCD (Parallel — I²C)</li>
+    <li>Входное напряжение: 5 В</li>
+    <li>Подключение дисплея:</li>
+    <ul>
+      <li>Аппаратный интерфейс: контакты PLS-16</li>
+      <li>Программный интерфейс: цифровой сигнал</li>
+    </ul>
+    <li>Подключение контроллера:</li>
+    <ul>
+      <li>Аппаратный интерфейс: контакты PLS-4R</li>
+      <li>Программный интерфейс: I²C</li>
+    </ul>
+    <li>Размеры: 54x19x15 мм</li>
+    <li>Вес: 5 г</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://github.com/fmalpartida/New-LiquidCrystal">Библиотека для Arduino</a></li>
+    <li><a href="https://www.espruino.com/I2C">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://mikronika.net/image/catalog/product/robotdyn-converter-parallel-to-i2c/media/pcf8574-datasheet">Datasheet на PCF8574T</a></li>
+  </ul>
+</span>
