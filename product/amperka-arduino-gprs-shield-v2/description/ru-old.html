@@ -1,0 +1,189 @@
+<!-- 
+h1: Amperka GPRS Shield v2
+h1-detail: Плата расширения Amperka GPRS Shield v2
+short: Плата расширения для обновления Arduino до мобильного телефона
+title: GPRS Shield SIM900 купить в Киеве и Украине
+description: Плата GPRS обновит Arduino до смартфона со звонками, SMS и выходом в интернет. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Amperka GPRS Shield v2</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Подарите Arduino мобильную связь для управления устройством, даже если оно находится в поле за тридевять земель. Плата расширения Amperka GPRS Shield позволит разработать девайс удалённого управления бойлером на даче, создать телефон-игрушку для своего ребёнка или мониторить данные в загородной тепличке. Главное условие — наличие мобильной связи.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/QMSlBQD2Eog" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>GPRS Shield выполнен на чипе <a href="https://mikronika.net/image/catalog/product/amperka-arduino-gprs-shield-v2/media/sim900-datasheet.pdf">SIM900</a> с функциями GSM и GPRS. Плата расширения подарит вашему устройству возможности мобильного телефона:</p>
+
+  <ul>
+    <li>Отправлять через SMS команды на устройство.</li>
+    <li>Запрашивать состояние или получать уведомления от него через SMS.</li>
+    <li>Звонить на устройство и проворачивать на нём различные сценарии.</li>
+    <li>Принимать звонки с устройства и прослушивать что происходит вокруг.</li>
+    <li>Выходить в интернет, опрашивать веб-сервисы, протоколировать данные.</li>
+  </ul>
+
+  <p>
+    <img alt="" src="https://mikronika.net/image/catalog/product/amperka-arduino-gprs-shield-v2/media/amperka-arduino-gprs-shield-v2.1.png" style="max-width: 75%" class="img-center" />
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Совместимость со всеми платами формфактора Arduino R3.</li>
+    <li>Слот для полноразмерной SIM-карты вашего любимого оператора.</li>
+    <li>Стандартные гнёзда 3,5 мм для подключения динамика и микрофона.</li>
+    <li>Гнездо для батарейки CR1225, обеспечивающей работу встроенных часов реального времени.</li>
+    <li>SMA-коннектор для внешней антенны.</li>
+    <li>Возможность смены контактов управления.</li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">Если вы не планируете использовать голосовую GSM-связь, то гарнитуру можно не подключать. Аналогично, если нет потребности в часах реального времени — батарейка не понадобится.</div>
+
+  <p>К SMA-разъёму можно подключить антенны на магните, липучке, большие, маленькие, с удлинителем и без. В комплект мы включили вертикальную антенну с усилением 2 дБ.</p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение контроллера</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Плата расширения GPRS Shield предусмотрена для установки на контроллеры формфактора <a href="https://mikronika.net/product/arduino-uno">Arduino Uno</a> и формфактора <a href="https://mikronika.net/product/arduino-mega-2560">Arduino Mega 2560</a>. Для коммуникации с микроконтроллером используются контакты интерфейса UART с дополнительными пинами управления:</p>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">RX</td>
+        <td>Линия приёма данных интерфейса UART</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">TX</td>
+        <td>Линия отправки данных интерфейса UART</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">PK</td>
+        <td>Программное включения модуля</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">ST</td>
+        <td>Программное состояние модуля</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>GPRS Shield общается с микроконтроллером через интерфейс UART с дополнительными цифровыми сигналами. Для программной работы с платой расширения используйте библиотеки и функции, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://github.com/amperka/gprs-shield">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:gprs-shield">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-x">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.</div>
+</span>
+
+<!-- Комплектация -->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата Amperka GPRS Shield v2</li>
+    <li>1× Антенна вертикальная с усилением 2 дБ</li>
+    <li>4× Джампер</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Amperka GPRS Shield v2 / AMP-B029</li>
+    <li>Чип связи: SIM900</li>
+    <li>Совместимость: Arduino Shield R3</li>
+    <li>Программный интерфейс: UART с дополнительными пинами управления</li>
+    <li>Входное напряжение питания Vcc: 5–12 В</li>
+    <li>Потребляемый ток Icc:</li>
+    <ul>
+      <li>Нормальный режим: 20—500 мА</li>
+      <li>Поиск сети: до 2 A</li>
+      <li>Спящий режим: до 1,5 мА</li>
+    </ul>
+    <li>
+      Логическое напряжение уровней:
+      <ul>
+        <li>Вход: 3,3–5 В</li>
+        <li>Выход: 3,3–5 В</li>
+      </ul>
+    </li>
+    <li>Поддержка частот: 850/1800 МГц</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/продукты:arduino-gprs-shield-v2">Руководство по использованию и примеры</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://github.com/amperka/gprs-shield">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:gprs-shield">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      <a href="https://mikronika.net/image/catalog/product/amperka-arduino-gprs-shield-v2/media/sim900-datasheet.pdf">Datasheet на модуль SIM900</a>
+    </li>
+    <li>
+      <a href="https://mikronika.net/image/catalog/product/amperka-arduino-gprs-shield-v2/media/sim900-at-commands.pdf">Список AT-команд для модуля SIM900</a>
+    </li>
+  </ul>
+</span>

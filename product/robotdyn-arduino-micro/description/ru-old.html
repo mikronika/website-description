@@ -1,0 +1,169 @@
+<!--
+h1: RobotDyn Arduino Micro
+short: Эквивалент Arduino Leonardo на миниатюрной платформе
+title: Купить RobotDyn Arduino Micro в Украине и Киеве
+description: Реплика оригинальной платы Arduino Micro от производителя RobotDyn. Описание, характеристики, цена и фото на сайте.
+-->
+
+<h1>
+  <span class="header-color">RobotDyn Arduino Micro</span>
+</h1>
+
+<span class="font-family-size-head">
+  <p>Ищите компактную платформу для небольших проектов, где каждый миллиметр на счету? Arduino Micro от производителя RobotDyn заменит полноразмерную Arduino и поможет собрать проект, где размер действительно имеет значение.</p>
+</span>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Arduino Micro — это <a href="https://mikronika.net/product/arduino-leonardo">Arduino Leonardo</a>, исполненная на миниатюрной платформе. Добиться уменьшения габаритов позволило расположение компонентов с обеих сторон печатной платы. Такой удобный формфактор даст возможность создать целую сеть устройств из множества компактных микроконтроллеров, где каждый отвечает за конкретную задачу. Например сделать систему «Умный дом» в квартире, где за каждую комнату отвечает отдельная плата Arduino.</p>
+
+  <div class="wrap-attention" style="max-width: 80%">Обратите внимание! Плата поставляется с пинами в виде лужёных отверстий под пайку. Если планируете собирать и тестировать устройство на макетной плате, то вам пригодится набор контактных штырьков, который идёт в комплекте. Вооружитесь паяльником, канифолью и припоем для создания требуемого продукта.</div>
+
+  <p>Плата Arduino Micro на подключённом ПК может отображаться не только как виртуальный COM-порт, но и как HID-устройство, например клавиатура, мышь или джойстик. Благодаря таким уникальным свойствам, Micro может стать основой новых уникальных проектов с периферийными устройствами, от банального управления видеопроигрывателем до создания DIY-кинекта для компьютерных игр.</p>
+</span>
+
+<h2>
+  <span class="header-color">Начинка</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Платформа выполнена на базе микроконтроллера ATmega32U4 с тактовой частотой 16 МГц. Arduino Micro имеет встроенный USB-интерфейс, что устраняет необходимость в USB-UART преобразователе: то есть ATmega32U4 служит и для прошивки через USB, и для исполнения программ.</p>
+
+  <p>Процессор обладает тремя видами памяти:</p>
+
+  <ul>
+    <li>32 КБ Flash-памяти, из которых 4 КБ используются <a href="https://www.arduino.cc/en/Hacking/Bootloader">загрузчиком</a>, который позволяет прошивать Arduino Micro с компьютера через USB. Flash-память постоянна и её предназначение — хранение программ и сопутствующих статичных ресурсов.</li>
+    <li>2,5 КБ SRAM-памяти — это оперативная память платформы, которая предназначена для хранения временных данных, например глобальных переменных. SRAM-память энергозависимая и при выключении питания все данные сотрутся.</li>
+    <li>1 КБ энергонезависимой EEPROM-памяти. По своему назначению — это аналог жёсткого диска для Arduino. Предназначена для долговременного хранения данных, которые не стираются при выключении контроллера.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Распиновка</span>
+</h2>
+
+<p><img alt="" src="https://mikronika.net/image/catalog/product/robotdyn-arduino-micro/media/robotdyn-arduino-micro.1.png" style="max-width: 75%" class="img-center" /></p>
+
+<span class="font-family-size-article">
+  <p>На плате расположены 20 контактов для подключения внешних устройств. Некоторые из них обладают дополнительными возможностями:</p>
+
+  <ul>
+    <li>12 пинов позволяют представить аналоговое напряжение в цифровом виде.</li>
+    <li>7 пинов позволяют выводить аналоговое напряжение в виде ШИМ-сигнала из цифровых значений.</li>
+  </ul>
+
+  <p>Также на плате предусмотрены аппаратные интерфейсы: 1× SPI, 1× I²C, 1× UART.</p>
+
+  <div class="wrap-attention" style="max-width: 80%">Обратите внимание! Линии SPI присутствуют только на ICSP-разъёме и не продублированы на цифровых контактах. При подключении <a href="https://mikronika.net/collection/sensors">датчиков</a> и <a href="https://mikronika.net/collection/modules">дополнительных модулей</a> с интерфейсом SPI используйте контакты разъёма ICSP.</div>
+
+  <p>На платформе расположены четыре светодиодных индикатора: RX, TX, L, ON и кнопка Reset для сброса программы.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Для программирования платформы Arduino Micro используйте:</p>
+
+  <ul>
+    <li>Среда разработки <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a>.</li>
+    <li>Визуальная среда разработки <a href="https://amperka.ru/page/xod-ide">XOD IDE</a>.</li>
+    <li>Произвольный инструментарий C/C++.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Питание платформы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/robotdyn-arduino-micro/media/robotdyn-arduino-micro.2.png" style="max-width: 75%" class="img-center" /></p>
+
+  <p>Для питания платформы используйте разъём microUSB или контакт Vin. Источник определяется автоматически.</p>
+
+  <ul>
+    <li>При питании через USB понадобится зарядник на 5 В совместно с кабелем USB (A — MicroUSB).</li>
+    <li>При питании через пин Vin — используйте источник с выходным напряжением от 7 до 12 В. Преобразователи питания на плате выровняют входное напряжение до 5 и 3,3 В. В качестве источника питания используйте импульсный блок питания или сборку из аккумуляторов.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Габаритный чертёж</span>
+</h2>
+
+<p><img alt="" src="https://mikronika.net/image/catalog/product/robotdyn-arduino-micro/media/robotdyn-arduino-micro.3.png" style="max-width: 75%" class="img-center" /></p>
+
+<!--Комплектация-->
+
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата RobotDyn Arduino Micro</li>
+    <li>2× Контактные штыри PLS-17</li>
+    <li>1× Контактные штыри PLD-6</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: RobotDyn Arduino Micro</li>
+    <li>Микроконтроллер: ATmega32U4</li>
+    <li>Тактовая частота: 16 МГц</li>
+    <li>Интерфейс: USB</li>
+    <li>Flash-память: 32 КБ</li>
+    <li>SRAM-память: 2,5 КБ</li>
+    <li>EEPROM-память: 1 КБ</li>
+    <li>Контакты ввода/вывода: 20</li>
+    <li>Контакты с ШИМ: 7</li>
+    <li>Контакты с АЦП: 12</li>
+    <li>
+      Аппаратные интерфейсы:
+      <ul>
+        <li>1× SPI</li>
+        <li>1× I²C</li>
+        <li>1× UART</li>
+      </ul>
+    </li>
+    <li>
+      Входное напряжение питания:
+      <ul>
+        <li>Через USB: 5 В</li>
+        <li>Через пин Vin: 7–12 В</li>
+      </ul>
+    </li>
+    <li>Максимальный выходной ток пина 5V: 800 мА</li>
+    <li>Максимальный выходной ток пина 3V3: 180 мА</li>
+    <li>Напряжение логических уровней: 5 В</li>
+    <li>Габариты: 48×18 мм</li>
+    <li>Вес: 8,5 г</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://www.arduino.cc/en/Guide/ArduinoLeonardoMicro">Начало работы с Arduino Micro</a></li>
+    <li><a href="https://www.arduino.cc/en/Main/Software">Среда разработки Arduino IDE</a></li>
+    <li><a href="https://www.arduino.cc/reference/">Справочник по языку С++</a></li>
+    <li><a href="https://amperka.ru/page/xod-ide">Среда разработки XOD IDE</a></li>
+    <li><a href="https://mikronika.net/image/catalog/product/robotdyn-arduino-micro/media/atmega32u4-datasheet.pdf">Datasheet на ATmega32U4</a></li>
+  </ul>
+</span>

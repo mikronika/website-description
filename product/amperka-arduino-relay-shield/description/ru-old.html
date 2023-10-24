@@ -1,0 +1,226 @@
+<!-- 
+h1: Amperka Relay Shield
+h1-detail: Плата расширения Amperka Relay Shield
+short: Плата расширения с четырьмя реле на борту
+title: Relay Shield от Амперки купить в Украине
+description: Плата расширения в помощь Arduino для управления приборами от бытовой сети 220 вольт. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Amperka Relay Shield</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Хотите управлять мощной нагрузкой и электроприборами с помощью Arduino? Тогда вам не обойтись без платы расширения Relay Shield, которая сможет рулить четырьмя бытовыми приборами одновременно. Каждый канал справляется с током до 5 А и переменным напряжением до 250 В.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/IdxJ26SlHTQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>По своей сути реле — это простой механический рубильник, который коммутирует силовое напряжение с помощью слаботочного. Это даёт возможность внешним контроллерам, например <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a>, управлять бытовыми приборами. При этом электрическая связь между управляющей электроникой и коммутируемой нагрузкой отсутствует — никакие помехи не повлияют на работу девайса.</p>
+
+  <p>
+    <img alt="" src="https://mikronika.net/image/catalog/product/amperka-arduino-relay-shield/media/amperka-arduino-relay-shield.1.gif" style="max-width: 100%" class="img-center" />
+  </p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Совместимость со всеми платами форм-фактора Arduino R3.</li>
+    <li>Четыре независимых реле <a href="https://mikronika.net/image/catalog/product/amperka-arduino-relay-shield/media/g5sb-datasheet.pdf">G5SB-14</a>.</li>
+    <li>Возможность смены контактов управления на каждом канале.</li>
+    <li>Светодиодная индикация по каждому каналу.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение контроллера</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Плата расширения Relay Shield предусмотрена для установки на контроллеры форм-факторов <a href="https://mikronika.net/product/arduino-uno">Arduino Uno</a> и <a href="https://mikronika.net/product/arduino-mega-2560">Arduino Mega 2560</a>. Для коммуникации с микроконтроллером используются контакты:</p>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">4</td>
+        <td>Пин управления реле №1</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">5</td>
+        <td>Пин управления реле №2</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">6</td>
+        <td>Пин управления реле №3</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">7</td>
+        <td>Пин управления реле №4</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h2>
+  <span class="header-color">Подключение нагрузки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Нагрузка к каждому реле подключается через отдельный клеммник под винт.</p>
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">NO</td>
+        <td>Нормально замкнутый</td>
+        <td>Подключите к нагрузке / Оставьте не подключенным</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">NC</td>
+        <td>Нормально разомкнутый</td>
+        <td>Подключите к нагрузке / Оставьте не подключенным</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">COM</td>
+        <td>Коммутируемый контакт</td>
+        <td>Подключите к силовому питанию</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Если на управляющей обмотке реле отсутствует напряжение, то между нормально замкнутым
+    <span class="font-family-monospaced">NC</span> и коммутируемым <span class="font-family-monospaced">COM</span> контактами есть электрическая связь, а между нормально разомкнутым <span class="font-family-monospaced">NO</span> и коммутируемым <span class="font-family-monospaced">COM</span> — нет. При подаче напряжения на управляющую обмотку нормально разомкнутый <span class="font-family-monospaced">NO</span> контакт замыкается, а нормально замкнутый <span class="font-family-monospaced">NC</span> — размыкается.
+  </p>
+  <div class="wrap-attention" style="max-width: 85%">
+    Если вы сомневаетесь как подключить к реле электроприбор, работающий от общей сети
+    <span class="font-family-monospaced">220 В</span>
+    и у вас есть сомнения, вопросы на тему того как это делается, остановитесь: вы можете устроить пожар или убить себя. Убедитесь, что у вас в голове — кристальное понимание принципа работы реле и опасностей, которые связаны с высоким напряжением.
+  </div>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Relay Shield общается с микроконтроллером через цифровой сигнал. Обмотка реле включается при подаче высокого уровня на сигнальный пин и отключается — при поступлении низкого уровня. Для программной работы с платой расширения используйте библиотеки и функции, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">Функция включения и отключения для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino.</a></li>
+  </ul>
+
+  <div class="wrap-info" style="max-width: 85%">Реле не поддерживает ШИМ-модуляцию! Если вам необходимо плавно управлять нагрузкой, воспользуйтесь <a href="https://mikronika.net/product/amperka-troyka-mosfet-n-channel">силовым ключом</a> для коммутации постоянного напряжения и твердотельным реле — для переменного.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата Amperka Relay Shield</li>
+    <li>4× Джампер</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Amperka Relay Shield / AMP-B019</li>
+    <li>Реле: G5SB-14</li>
+    <li>
+      Цифровая часть:
+      <ul>
+        <li>Напряжение питания Vcc1: 3,3–5 В</li>
+        <li>Потребляемый ток Icc1: до 80 мА</li>
+        <li>Совместимость: контроллеры Arduino R3</li>
+        <li>Программный интерфейс: цифровой бинарный сигнал</li>
+      </ul>
+    </li>
+    <li>
+      Силовая часть:
+      <ul>
+        <li>Максимальное коммутируемое напряжение Vcc2: DC 28 В / AC 250 В</li>
+        <li>Максимальный коммутируемый ток Icc2: до 5 А</li>
+        <li>Разъём подключения нагрузки: клеммник под винт</li>
+      </ul>
+    </li>
+    <li>Количество реле / каналов: 4</li>
+    <li>Рекомендованная частота переключения: до 1 Гц</li>
+    <li>Время жизни: не менее 50 000 переключений</li>
+    <li>Размеры: 69×53×18 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/продукты:relay-shield">Руководство по использованию</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Проекты</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/projects:smart-power">Проект «SMS-розетка»</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>
+      <a href="https://mikronika.net/image/catalog/product/amperka-arduino-relay-shield/media/g5sb-datasheet.pdf">Datasheet на реле G5SB-14</a>
+    </li>
+  </ul>
+</span>

@@ -1,0 +1,137 @@
+<!--
+h1: Датчик Холла / Troyka-модуль
+h1-detail: Датчик Холла / Troyka-модуль
+short: Аналоговый сенсор для измерения напряжённости и полярности магнитного поля
+title: Датчик Холла для Arduino купить в Украине
+description: Сенсор Холла зафиксирует факт приближения магнита, измерит напряжённость магнитного поля Земли и выполнит роль тахометра для подсчёта оборотов двигателя.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Датчик Холла / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Сенсор Холла зафиксирует факт приближения магнита и определит его полюс. А ещё датчик выполнит роль тахометра, сенсора открытия дверей или найдёт положения вала при управлении бесколлекторным двигателем. А из двух датчиков Холла можно собрать энкодер.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/POFXArj3XaQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Датчик магнитного поля основан на эффекте Холла, суть которого в следующем: если проводник с током помещён в магнитное поле, на его краях возникает ЭДС, направленная перпендикулярно к направлению тока и направлению магнитного поля.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-hall/media/amperka-troyka-sensor-hall.1.png" style="max-width: 100%" class="img-center" /></p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Модуль выполнен на чипе сенсора магнитного поля <a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-hall/media/ss49e-datasheet.pdf">SS49E</a>.</li>
+    <li>Датчик зафиксирует факт приближения магнита и определит его полюс. А ещё сенсор выполнит роль тахометра, датчика открытия дверей или найдёт положения вала при управлении бесколлекторным двигателем.</li>
+    <li>Возможность собрать энкодер при добавлении второго датчика Холла.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Датчик магнитного поля подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через группу из трёх контактов.</p>
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Выходной сигнал сенсора</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера с поддержкой АЦП.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Датчик общается с микроконтроллером через аналоговый сигнал. В отсутствии магнитного поля датчик выдаёт половину напряжения питания. При появлении магнитного поля значение отклоняется к напряжению питания или нулю, в зависимости от полярности магнитного поля и пропорционально его интенсивности. Для программной работы с сенсором используйте функции и библиотеки, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/">Функция для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:builtins#функции_работы_с_пинами">Функция для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 85%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>1× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Датчик Холла / Troyka-модуль / AMP-B006</li>
+    <li>Чип: SS49</li>
+    <li>Входное напряжение питания Vcc: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: до 5 мкА</li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: аналоговый сигнал</li>
+    <li>Выходное напряжение: 0–Vcc В</li>
+    <li>Размеры: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-hall/media/ss49e-datasheet.pdf">Datasheet на чип SS49E</a></li>
+  </ul>
+</span>
