@@ -1,0 +1,143 @@
+<!--
+h1: Мини-Реле / Troyka-модуль
+h1-detail: Мини-Реле / Troyka-модуль
+short: Компактный модуль с электромеханическим реле для управления бытовой электроникой
+title: Купить мини реле для Arduino и Raspberry Pi в Украине
+description: Реле поможет управлять бытовыми приборами с помощью микроконтроллера, например Arduino и Raspberry Pi.
+-->
+
+<span class="font-family-size-head">
+  <p>Мини-реле из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> для управления питанием бытовых электроприборов с помощью микроконтроллеров. С модулем просто работать, вам не придётся возиться с пайкой, макетной платой и необходимой обвязкой для «голого» реле — всё уже готово.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/kqvMFyqsjvQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>По своей сути реле — это простой механический рубильник, которым можно управлять при помощи <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Espruino</a>. При этом электрическая связь между управляющей электроникой и коммутируемой нагрузкой отсутствует — никакие помехи не испортят ваши планы.</p>
+
+  <p>Реле сможет включать и выключать электроприборы, которые подключены к бытовой электросети 220 В. Без коммутатора не обойтись при обустройстве «умного дома». Реле также может пригодится для управления устройствами с «древними» кнопками: например, для автоматического набора номера на доисторическом настольном телефоне.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-relay-mini/media/amperka-troyka-relay-mini.1.png" style="max-width: 75%" class="img-center" /></p>
+</span>
+
+<h2>
+  <span class="header-color">Начинка</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Релейный модуль выполнен на основе электромеханическое реле <a href="https://mikronika.net/image/catalog/product/amperka-troyka-relay-mini/media/tru5vdc-datasheet.pdf">TRU-5VDC</a>, с контактами:</p>
+  <ul>
+    <li>NC — нормально замкнутый;</li>
+    <li>NO — нормально разомкнутый;</li>
+    <li>COM — коммутируемый контакт.</li>
+  </ul>
+  <p>Если на управляющей обмотке реле отсутствует напряжение, то между нормально замкнутым <span class="font-family-monospaced">NC</span> и коммутируемым <span class="font-family-monospaced">COM</span> контактами есть электрическая связь, а между нормально разомкнутым <span class="font-family-monospaced">NO</span> и коммутируемым <span class="font-family-monospaced">COM</span> — нет. При подаче напряжения на управляющую обмотку нормально разомкнутый <span class="font-family-monospaced">NO</span> контакт замыкается, а нормально замкнутый <span class="font-family-monospaced">NC</span> — размыкается.</p>
+
+  <p>Вся электронная обвязка необходимая для управления реле уже встроена в модуль. На модуле расположен светодиод, который подскажет — замкнуто реле или нет.</p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<h3>
+  <span class="header-color">Нагрузка</span>
+</h3>
+
+<span class="font-family-size-article">
+  <p>Нагрузка к реле подключается через колодки под винт. Контакт от источника напряжения подключается к выводу <span class="font-family-monospaced">COM</span>, а нагрузка — к контакту <span class="font-family-monospaced">NO</span> или <span class="font-family-monospaced">NC</span>, в зависимости от задачи которую должно выполнять реле. Чаще всего реле используется для замыкания внешней цепи при подаче напряжения на управляющую обмотку. При таком способе даже если напряжение на <a href="https://mikronika.net/collection/controllers">управляющей плате</a> по какой-то причине пропадёт, управляемая нагрузка будет автоматически отключена.</p>
+</span>
+
+<h3>
+  <span class="header-color">Управление</span>
+</h3>
+
+<span class="font-family-size-article">
+  <p>Реле подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через три провода.</p>
+
+  <ul>
+    <li>Сигнальный (S) — управляющий контакт обмоткой реле. Подключите к цифровому пину микроконтроллера.</li>
+    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
+    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
+  </ul>
+
+  <p>При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.</p>
+
+  <p>Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+
+  <div class="wrap-attention" style="max-width: 85%">Если вы сомневаетесь как подключить к реле электроприбор, работающий от общей сети <span class="font-family-monospaced">220 В</span> и у вас есть сомнения, вопросы на тему того как это делается, остановитесь: вы можете устроить пожар или убить себя. Убедитесь, что у вас в голове — кристальное понимание принципа работы реле и опасностей, которые связаны с высоким напряжением.</div>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Управление реле аналогично работе <a href="https://mikronika.net/product/amperka-troyka-led-pirania">со светодиодным модулем</a>. Обмотка реле включается при подаче высокого уровня на сигнальный пин и отключается — при поступлении низкого уровня.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">Функция включения и отключения для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino.</a></li>
+  </ul>
+
+  <div class="wrap-info" style="max-width: 85%">Реле не поддерживает ШИМ-модуляцию! Если вам необходимо плавно управлять нагрузкой, воспользуйтесь <a href="https://mikronika.net/product/amperka-troyka-mosfet-n-channel">силовым ключом</a> для коммутации постоянного напряжения и твердотельным реле — для переменного.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль реле</li>
+    <li>1× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Реле-модуль: TRU-5VDC</li>
+    <li>Рабочее напряжение: 3,3–5 В</li>
+    <li>Потребляемый ток: до 100 мА</li>
+    <li>
+      Максимальное коммутируемое напряжение:
+      <ul>
+        <li>28 В постоянного тока</li>
+        <li>250 В переменного тока</li>
+      </ul>
+    </li>
+    <li>Максимальный коммутируемый ток: 15 А</li>
+    <li>Рекомендованная частота переключения: до 1 Гц</li>
+    <li>Время жизни: не менее 50 000 переключений</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino</a></li>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-relay-mini/media/tru5vdc-datasheet.pdf">Техническое описание реле TRU-5VDC</a></li>
+  </ul>
+</span>

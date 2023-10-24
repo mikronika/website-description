@@ -1,0 +1,143 @@
+<!--
+h1: Сенсор вибрации / Troyka-модуль
+h1-detail: Сенсор вибрации / Troyka-модуль
+short: Сенсор для измерения уровня вибрации и шума
+title: Купить датчик вибрации для Arduino в Украине
+description: Датчик вибрации с выносным пьезо-диском пригодится для мониторинга тишины от соседей c перфоратором или предупредит о начинающемся землетрясении.
+-->
+
+<span class="font-family-size-head">
+  <p>Датчик вибрации с выносным пьезодатчиком пригодится для мониторинга тишины от соседей c перфоратором или предупредит о начинающемся землетрясении. А ещё сенсор поможет собрать секретный кодовый замок, повысит надёжность охранной сигнализации и выступит главным судьёй в <a href="https://www.youtube.com/watch?v=9LEGHUFEet0">прыгательной дуэли.</a></p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/0f3-JNnmExg" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Начинка</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Датчик вибрации улавливает даже незначительную деформацию пьезодиска и выдаёт аналоговый сигнал, пропорциональный её силе. Для регулировки чувствительности мы предусмотрели на модуле подстроечный потенциометр. Он пригодится, если вам понадобится изменить чувствительность сенсора или изменить порог срабатывания устройства не трогая прошивку.</p>
+
+  <p>Сенсор вибрации состоит из чувствительного элемента пьезодиска, который подключается через винтовые клеммы к электронной схемы обработки сигнала.</p>
+</span>
+
+<h3>
+  <span class="header-color">Пьезодиск</span>
+</h3>
+
+<span class="font-family-size-article">
+  <p>Пьезодиск выполнен из мембраны обладающей пьезоэлектрическими свойствами:</p>
+
+  <ul>
+    <li>Прямой пьезоэлектрический эффект — при сжимании мембраны на её концах вырабатывается электричество. Используется в нашем сенсоре вибрации.</li>
+    <li>Обратный пьезоэлектрический эффект — под действием электрического поля возникает механическое движение мембраны, которое и вызывает слышимые нами звуковые волны. Используется в <a href="https://mikronika.net/product/amperka-troyka-buzzer">нашей пищалке.</a></li>
+  </ul>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-vibration/media/amperka-troyka-sensor-vibration.1.png" style="max-width: 100%" class="img-center" /></p>
+</span>
+
+<h3>
+  <span class="header-color">Схема обработки сигнала</span>
+</h3>
+
+<span class="font-family-size-article">
+  <p>Аналоговый сигнал с пьезодиска — это переменное напряжение. Часть сигнала положительная, другая — отрицательная. Микроконтроллер может оцифровывать только положительное напряжение. Если сигнал передать на АЦП контроллера без обработки, оцифруется только положительная полуволна. А без предварительного усиления сигнал будет едва отличим от цифрового шума. Первая часть электронной обвязки модуля поднимает нулевое значение сигнала с пьезодиска до середины напряжения питания и усиливает его.</p>
+
+  <p>Разовые замеры максимальных значений амплитуды колебаний не дадут представления об общем уровне вибрации. Чтобы получить достоверную информацию, придётся делать измерения максимально часто и интегрировать полученные значения. Это может существенно сократить ресурсы микроконтроллера. Вторая часть электронной обвязки модуля добавляет в схему аппаратное усреднение амплитуды сигнала. Сенсор выдаёт аналоговый сигнал в диапазоне от нуля до напряжения питания. Выходное напряжение пропорционально уровню вибраций за последние несколько сотен миллисекунд. Эта особенность модуля поможет существенно упростить ваш код.</p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Датчик вибрации подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через две пары Troyka-контактов.</p>
+</span>
+
+<h3>
+  <span class="header-color">Первая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Сигнальный (E) — обработанный сигнал датчика вибрации. Подключите к аналоговому пину микроконтроллера.</li>
+    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
+    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
+  </ul>
+</span>
+
+<h3>
+  <span class="header-color">Вторая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Сигнальный (S) — усиленный сигнал с пьезодиска. Подключите к аналоговому пину микроконтроллера.</li>
+  </ul>
+
+  <p>При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.</p>
+
+  <p>Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>На выходе модуля два аналоговых сигнала. Используйте встроенные функции для считывания данных.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/">Функция для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:builtins#функции_работы_с_пинами">Функция для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 85%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Пьезодиск</li>
+    <li>1× Плата-модуль обработки сигнала</li>
+    <li>2× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Чувствительный элемент: пьезодиск</li>
+    <li>Рабочее напряжение: 3,3–5 В</li>
+    <li>Потребляемый ток: 10 мА</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/">Функция для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:builtins#функции_работы_с_пинами">Функция для Espruino</a></li>
+  </ul>
+</span>

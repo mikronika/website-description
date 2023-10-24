@@ -1,0 +1,168 @@
+<!--
+h1: Кнопка / Troyka-модуль
+h1-detail: Кнопка / Troyka-модуль
+short: Кнопка-модуль с подтягивающем резистором
+title: Купить кнопку для Arduino и Raspberry Pi в Украине
+description: Кнопка подарит возможность включать, отключать и задавать события вашего устройства. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Кнопка / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Возьмите модуль-кнопку из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> в качестве сенсора управления и настройки устройства. Вам не придётся возиться с пайкой, мелкими компонентами на макетной плате или беспокоиться о подтягивающем резисторе — всё уже готово.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<h3>
+  <span class="header-color">Кнопка в обзоре железки «Четырёхкнопочная клавиатура»</span>
+</h3>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/CyIVAscrsx0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Практически ни одно электронное устройство не обходится без кнопки. Наверное, человеку из средневековья кнопка показалась бы чем-то магическим, ведь после нажатия на модуль может произойти что угодно! Приедет лифт или зажгутся огни? Взлетит ракета или приготовится кофе? Только вы знаете, какая магия произойдёт после нажатия кнопки на вашем устройстве.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-button/media/amperka-troyka-button.1.gif" style="max-width: 75%" class="img-center" /></p>
+</span>
+
+<h2>
+  <span class="header-color">Эффект дребезга</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>При нажимании на кнопку между контактными пластинами возникают микроискры, провоцирующие до десятка переключений за несколько миллисекунд. Явление называется дребезгом. Микроконтроллер «поймает» все эти нажатия, потому что дребезг не отличим от настоящего нажатия на кнопку. Это нужно учитывать, если необходимо фиксировать «клики».</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-button/media/amperka-troyka-button.2.png" style="max-width: 100%" class="img-center" /></p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Встроенный подтягивающий резистор к земле: в отпущенном состоянии на выходе кнопки не будет помех.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Кнопка подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через группу из трёх контактов.</p>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Выходной сигнал сенсора</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Кнопка общается с микроконтроллером через цифровой сигнал. Пока кнопка не зажата, датчик отдаёт логическую единицу, когда кнопка зажата — логический ноль. Для программной работы с сенсором используйте функции и библиотеки, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://github.com/amperka/TroykaButton">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:button">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-malina-v4">Малина</a>.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>1× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Кнопка / Troyka-модуль / AMP-B009</li>
+    <li>Входное напряжение питания Vcc: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: 50 мА</li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: цифровой бинарный сигнал</li>
+    <li>
+      Логическое напряжение уровней:
+      <ul>
+        <li>Вход: не используется</li>
+        <li>Выход: 3,3–5 В</li>
+      </ul>
+    </li>
+    <li>Сопротивление подтягивающего резистора: 10 кОм</li>
+    <li>Диаметр колпачка: 11,8 мм</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/продукты:troyka-button">Руководство по использованию</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://github.com/amperka/TroykaButton">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:button">Библиотека для Espruino</a></li>
+  </ul>
+</span>

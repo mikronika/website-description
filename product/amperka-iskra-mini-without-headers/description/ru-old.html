@@ -1,0 +1,216 @@
+<!--
+h1: Amperka Iskra Mini (без ног)
+h1-detail: Контроллер Amperka Iskra Mini (без ног)
+short: Эквивалент Arduino Mini от Амперки
+title: Amperka Iskra Mini (без ног) купить в Украине
+description: Реплика оригинальной платы Arduino Mini от Амперки. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Amperka Iskra Mini (без ног)</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Iskra Mini — это высококачественная реплика компактной итальянской платы от Амперки. На основе платформы можно собрать миниатюрный GPS-трекер для мониторинга вашего питомца или DIY-алкотестер для вечеринки. Габариты Iskra Mini позволяют создать целую сеть устройств в «Умном доме», где каждая плата отвечает за определённую комнату.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/d-4xZ7B86ts" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-head">
+  <p>Iskra Mini выполнена на базе микроконтроллера <a href="https://mikronika.net/image/catalog/product/amperka-iskra-mini-without-headers/media/atmega328p-datasheet.pdf">ATmega328P</a> с тактовой частотой 16 МГц. Процессор обладает тремя блоками памяти:</p>
+
+  <ul>
+    <li>Flash-память на 32 КБ.</li>
+    <li>SRAM-памяти на 2 КБ.</li>
+    <li>EEPROM-памяти на 1 КБ.</li>
+  </ul>
+
+  <p>Используйте платформу в проектах, где размер имеет значение и всё устройство должно вместится в коробку из под леденцов.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-iskra-mini-without-headers/media/amperka-iskra-mini-without-headers.1.png" style="max-width: 100%" class="img-center" /></p>
+
+  <div class="wrap-tip" style="max-width: 80%">Плата поставляется с пинами в виде простых лужёных отверстий. Почувствуйте себя настоящим электронщиком: для взаимодействия с платформой вооружитесь паяльником, канифолью, припоем и электронными компонентами для создания готового продукта.</div>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-iskra-mini-without-headers/photo/amperka-iskra-mini-without-headers.2.png" style="max-width: 100%" class="img-center" /></p>
+
+  <p>Для прототипирования устройств на макетной плате возьмите <a href="https://mikronika.net/product/amperka-iskra-mini-with-headers">Iskra Mini с ногами</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Эквивалент итальянской Arduino Mini.</li>
+    <li>Микроконтроллер ATmega328P, такой же как на Arduino Uno, Arduino Mini и Arduino Nano.</li>
+    <li>Светодиодные индикаторы: L и ON.</li>
+    <li>Кнопка Reset для сброса программы.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Распиновка</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>На плате расположены 22 контакта ввода-вывода GPIO для подключения внешних устройств. Некоторые пины обладают дополнительными возможностями:</p>
+
+  <ul>
+    <li>8× ADC / АЦП с разрядностью 10 бит</li>
+    <li>6× PWM / ШИМ с разрядностью 8 бит</li>
+    <li>2× INT / Прерывания</li>
+  </ul>
+
+  <p>Также предусмотрены аппаратные интерфейсы:</p>
+
+  <ul>
+    <li>1× SPI</li>
+    <li>1× I²C</li>
+    <li>1× UART</li>
+  </ul>
+
+  <div class="wrap-info" style="max-width: 80%">Логическое напряжение уровней GPIO на плате Iskra Mini — 5 В: выходы логической единицы выдают 5 В и в режиме входа ожидают принимать 5 В. Однако все пины воспринимают 3,3 вольта как логическую единицу, так что смело можете подключать любимые датчики к этой платформе. Все подробности распиновки читайте в <a href="http://wiki.amperka.ru/продукты:iskra-mini">руководстве по использованию</a>.</div>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Для программирования платформы Iskra Mini используйте:</p>
+
+  <ul>
+    <li>Штатную среду разработки <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a>.</li>
+    <li>Визуальную среду разработки <a href="https://amperka.ru/page/xod-ide">XOD IDE</a>.</li>
+    <li>Произвольный инструментарий C/C++.</li>
+  </ul>
+
+  <p>Обратите внимание, что на плате нет собственного USB-порта, поэтому для её прошивки понадобится посредник:</p>
+
+  <ul>
+    <li><a href="https://mikronika.net/product/amperka-troyka-converter-usb-uart">USB-UART преобразователь.</a></li>
+    <li><a href="https://mikronika.net/product/arduino-uno">Arduino Uno.</a></li>
+    <li>ICSP-программатор.</li>
+  </ul>
+
+  <p>Все подробности подключения и настройки <a href="http://wiki.amperka.ru/продукты:iskra-mini">читайте в нашей технической документации</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Питание</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Для питания платформы используйте пины 5V или Vin.</p>
+
+  <ul>
+    <li>При питании через контакт 5V понадобится источник с выходным напряжением на 5 В.</li>
+    <li>При питании через контакт Vin понадобится источник с выходным напряжением от 7 до 12 В.</li>
+  </ul>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата Iskra Mini (без ног)</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Amperka Iskra Mini (без ног) / AMP-B040</li>
+    <li>Форм-фактор: Arduino Mini</li>
+    <li>Микроконтроллер: ATmega328P</li>
+    <li>Тактовая частота: 16 МГц</li>
+    <li>Flash-память: 32 КБ</li>
+    <li>SRAM-память: 2 КБ</li>
+    <li>EEPROM-память: 1 КБ</li>
+    <li>
+      Контакты ввода-вывода:
+      <ul>
+        <li>22× GPIO</li>
+        <li>8× ADC / Разрядность 10 бит</li>
+        <li>6× PWM / Разрядность 8 бит</li>
+        <li>2× INT / Прерывания</li>
+      </ul>
+    </li>
+    <li>
+      Аппаратные интерфейсы:
+      <ul>
+        <li>1× SPI</li>
+        <li>1× I²C</li>
+        <li>1× UART</li>
+      </ul>
+    </li>
+    <li>
+      Напряжение логических уровней GPIO:
+      <ul>
+        <li>Вход: 3,3–5 В</li>
+        <li>Выход: 5 В</li>
+      </ul>
+    </li>
+    <li>
+      Входное напряжение питания:
+      <ul>
+        <li>Через пин 5V: 5 В</li>
+        <li>Через пин Vin: 7–12 В</li>
+      </ul>
+    </li>
+    <li>Максимальный выходной ток с пина 5V: 150 мА</li>
+    <li>Размеры: 33×20 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/продукты:iskra-mini">Руководство по использованию</a></li>
+    <li><a href="https://www.arduino.cc/en/Guide">Установка и настройка Arduino IDE</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Проекты</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/projects:povdisplay">POV-строка (рисуем в воздухе)</a></li>
+    <li><a href="http://wiki.amperka.ru/projects:keylogger">Клавиатурный шпион</a></li>
+    <li><a href="http://wiki.amperka.ru/projects:magicbook">Электронный тайник с IMU-сенсором</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-iskra-mini-without-headers/media/atmega328p-datasheet.pdf">Datasheet на микроконтроллер ATmega328P</a></li>
+  </ul>
+</span>

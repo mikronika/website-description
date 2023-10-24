@@ -1,0 +1,120 @@
+<!--
+h1: SD картридер / Troyka-модуль
+h1-detail: SD картридер / Troyka-модуль
+short: Модуль для работы с картами формата microSD
+title: Купить SD картридер для Arduino в Киеве и Украине
+description: Компактный SD Card Reader добавит контроллеру до 32 гигабайт энергонезависимой памяти для хранения логов и медиа данных.
+-->
+
+<span class="font-family-size-head">
+  <p>Лёгкие web-сервера, подробные логи и объёмные медиафайлы — теперь это по плечу <a href="https://mikronika.net/collection/arduino">Arduino</a>. Добавьте в свой проект компактный картридер и получите до 32 гигабайт энергонезависимой памяти.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/S58Y_cnFcYk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>SD-картридер предназначен для подключения карты памяти форматов microSD и microSDHC к Arduino или Espruino. Мы поместили на модуль регулятор напряжения и всю необходимую обвязку согласования уровней сигналов. Поэтому вы смело можете использовать его с управляющей электроникой напряжением от 3,3 до 5 В.</p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Картридер подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через шину питания и данных по протоколу SPI. Все линии выведены на две колодки Troyka-контактов.</p>
+</span>
+
+<h3>
+  <span class="header-color">Первая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Сигнальный (CS) — выбор ведомого устройства. Подключите к любому цифровому пину микроконтроллера.</li>
+    <li>Питание (V) — соедините с рабочим напряжением микроконтроллера.</li>
+    <li>Земля (G) — соедините с пином GND микроконтроллера.</li>
+  </ul>
+</span>
+
+<h3>
+  <span class="header-color">Вторая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Сигнальный (DI) — вход ведомого устройства. Используется для приёма данных из микроконтроллера. Подключите к пину MOSI микроконтроллера.</li>
+    <li>Сигнальный (DO) — выход ведомого устройства. Используется для передачи данных в микроконтроллер. Подключите к пину MISO микроконтроллера.</li>
+    <li>Сигнальный (SCK) — пин последовательного тактового сигнала. Используется для согласования скорости передачи. Подключите к пину SCK микроконтроллера.</li>
+  </ul>
+
+  <p>При подключении к <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/iskra">Iskra</a> используйте <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a>. Чтобы полностью избавиться от проводов, возьмите <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>.</p>
+
+  <p>Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>SD-модуль общается с управляющей платой по интерфейсу SPI на низком уровне. Используйте библиотеки для облегчения написания кода программ: они скрывают в себе все тонкости общения с модулем и на выходе вы получите готовы данные.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/en/reference/SD">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:fs">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-x">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>2× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Поддерживаемые типы карт: microSD, microSDHC</li>
+    <li>Максимальное размер памяти: 32 ГБ</li>
+    <li>Интерфейс: SPI</li>
+    <li>Рабочее напряжение: 3,3–5 В</li>
+    <li>Потребляемый ток: 10 мА</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="http://wiki.amperka.ru/продукты:troyka-sd">Техническая документация и примеры работы</a></li>
+    <li><a href="https://www.arduino.cc/en/reference/SD">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:fs">Библиотека для Espruino</a></li>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+  </ul>
+</span>

@@ -1,0 +1,204 @@
+<!--
+h1: Датчик горючих газов MQ-9 / Troyka-модуль
+h1-detail: Датчик горючих газов MQ-9 / Troyka-модуль
+short: Сенсор для определения концентрации природного, сжиженного и угарного газа
+title: Датчик горючих газов MQ-9 купить в Киеве и Украине
+description: Сенсор MQ9 определит концентрации природного, сжиженного и угарного газов. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Датчик горючих газов MQ-9 / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Универсальный датчик MQ-9 поможет определить концентрацию углекислого, угарного, природного и сжиженного газа.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/tU1WjoE15m8" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2><span class="header-color">Общие сведения</span></h2>
+
+<span class="font-family-size-article">
+  <p>Датчик построен на базе полупроводникового газоанализатора <a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq9/media/mq9-datasheet.pdf">MQ-9</a>. На выходе сенсора аналоговый сигнал, пропорциональный содержанию газов в окружающей среде.</p>
+
+  <p>Внутри датчика расположен чувствительный элемент, который состоит из керамической трубки с покрытием Al2O3 (оксид алюминия) и нанесенного на неё чувствительного слоя SnO2 (диоксида олова). Внутри трубки проходит нагревательный элемент, который нагревает чувствительный слой до температуры, при которой он начинает реагировать на определяемый газ. Чувствительность к разным газам достигается варьированием состава примесей в чувствительном слое.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq9/media/amperka-troyka-sensor-gas-mq9.1.png" style="max-width: 50%" class="img-center" /></p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Чувствительность ко всем вредным газам.</li>
+    <li>Возможность отдельно управлять нагревателем.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<p>Датчик газа подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> двумя способами:</p>
+
+<ol>
+  <li>Штатный способ. Если нет нужды в управлении нагревателем датчика. Для коммуникации используйте только первую группу Troyka-контактов.</li>
+  <li>Расширенный способ. Если есть нужда в управлении нагревателем. Для коммуникации используйте первую и вторую группу Troyka-контактов.</li>
+</ol>
+
+<h3>
+  <span class="header-color">Первая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Выходной сигнал сенсора</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера с поддержкой АЦП.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h3>
+  <span class="header-color">Вторая группа</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">E</td>
+        <td>Управление питанием нагревателя</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера с поддержкой АЦП.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">H</td>
+        <td>Питание нагревателя</td>
+        <td>Подключите к питанию 5 вольт.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<span class="font-family-size-article">
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT, который подарит малине пины с АЦП. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Датчик газа MQ-9 для связи с микроконтроллером использует два аналоговых сигнала: один — для считывания концентрации газа, второй — для управления нагревателем. Для программной работы с модулем используйте библиотеки, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:gas-sensor">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 80%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-yodo">Йодо</a>.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль c датчиком MQ-9</li>
+    <li>2× Трёхпроводной шлейф</li>
+    <li>1× Джампер</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Датчик горючих газов MQ-9 / Troyka-модуль / AMP-B057</li>
+    <li>Газоанализатор: MQ-9</li>
+    <li>Входное напряжение питания датчика Vcc1: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: до 20 мА</li>
+    <li>Входное напряжение питания нагревателя Vcc2: 5 В</li>
+    <li>Потребляемый ток Icc2: до 150 мА</li>
+    <li>Рекомендуемые газы: угарный газ, метан, бутан, изобутан</li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: аналоговый сигнал</li>
+    <li>Выходное напряжение: 0–Vcc В</li>
+    <li>Габариты: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/продукты:mq9">Руководство по использованию</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://github.com/amperka/TroykaMQ">Библиотека для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:gas-sensor">Библиотека для Espruino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-sensor-gas-mq9/media/mq9-datasheet.pdf">Datasheet на датчик MQ-9</a></li>
+  </ul>
+</span>

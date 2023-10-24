@@ -1,0 +1,206 @@
+<!--
+h1: Гироскоп / Troyka-модуль
+h1-detail: Гироскоп v1 / Troyka-модуль
+short: Сенсор для определения угловой скорости по трём осям X, Y, Z
+title: Гироскоп для Arduino и Raspberry Pi купить в Украине
+description: Датчик для определения угловой скорости вокруг собственных осей X, Y, Z. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Гироскоп / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Вы никогда не думали, с какой скоростью вращается балерина исполняя фуэте? Конечно, для решения этой задачи можно было бы использовать простой магнит на ее ноге и геркон. Но как же быть с воздушными гимнастами, ведь они могут вращаться в трёх плоскостях? Определить какой гимнаст вращается быстрее поможет трёхосевой гироскоп.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/JCdy53zOPoA" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Гироскоп из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> измерит угловую скорость вокруг собственных осей X, Y, Z. Это свойство пригодиться для стабилизации летательного аппарата по самолётным углам: тангаж, крен и рысканье.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-gyroscope-v1/media/amperka-troyka-gyroscope-v1.1.png" style="max-width: 75%" class="img-center" /></p>
+
+  <p>Модуль основан на чипе гироскопа<a href="https://mikronika.net/image/catalog/product/amperka-troyka-gyroscope-v1/media/l3g4200d-datasheet.pdf">L3G4200D</a>. Микросхема имеет встроенный датчик температуры для точной работы сенсора даже в экстремальных условиях.</p>
+
+  <p>Гироскоп совместно с <a href="https://mikronika.net/product/amperka-troyka-accelerometer">акселерометром</a> применяется для отслеживания угла поворота в современном смартфоне.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-gyroscope-v1/media/amperka-troyka-gyroscope-v1.2.gif" style="max-width: 100%" class="img-center" /></p>
+
+  <div class="wrap-tip" style="max-width: 85%">Если вам необходимо определить положение вашего девайса в пространстве и нет желания возиться с модулями по отдельности: обратите внимания на <a href="https://mikronika.net/product/amperka-troyka-imu-10-dof">IMU-сенсор 10 степеней свободы</a>, в котором мы распаяли все чипы на одной плате.</div>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Совместимость с напряжением питания и логики 3,3–5 В.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Гироскоп подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через две группы Troyka-контактов.</p>
+</span>
+
+<h3>
+  <span class="header-color">Контакты питания</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<h3>
+  <span class="header-color">Контакты данных</span>
+</h3>
+
+<span class="font-family-size-article">
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">D</td>
+        <td>Данные шины I²C</td>
+        <td>Подключите к пину SDA микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">C</td>
+        <td>Тактирование шины I²C</td>
+        <td>Подключите к пину SCL микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+
+<span class="font-family-size-article">
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Гироскоп общается с микроконтроллером через интерфейс I²C. Для программной работы с датчиком используйте библиотеки и функции, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://github.com/amperka/Troyka-IMU">Библиотека для Arduino</a></li>
+  </ul>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Гироскоп / Troyka-модуль</li>
+    <li>2× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Гироскоп v1 / Troyka-модуль / AMP-B032</li>
+    <li>Чип: L3G4200D</li>
+    <li>Входное напряжение питания Vcc: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: до 10 мА</li>
+    <li>
+      Логическое напряжение уровней:
+      <ul>
+        <li>Вход: 3,3–5 В</li>
+        <li>Выход: 3,3–5 В</li>
+      </ul>
+    </li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: I²C</li>
+    <li>
+      I²C-адрес:
+      <ul>
+        <li>Без перемычки: 0x68</li>
+        <li>С перемычкой: 0x69</li>
+      </ul>
+    </li>
+    <li>Количество степеней свободы: 3 (X, Y, Z)</li>
+    <li>Диапазон измерений: ±250 / ±500° / ±2000 °/с</li>
+    <li>Чувствительность: 8,7×10⁻³ °/с</li>
+    <li>Размеры: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/products:troyka-gyro-v2">Руководство по использованию</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Библиотеки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://github.com/amperka/Troyka-IMU">Библиотека для Arduino</a></li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Документация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-gyroscope-v1/media/l3g4200d-datasheet.pdf">Datasheet на чип гироскопа L3G4200D</a></li>
+  </ul>
+</span>
