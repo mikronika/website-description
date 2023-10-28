@@ -1,0 +1,153 @@
+<!--
+h1: Amperka Troyka Светодиод «Пиранья» (Красный)
+h1-detail: Amperka Troyka Светодиод «Пиранья» (Красный)
+short: Модуль со сверхъярким красным светодиодом
+title: Светодиод «Пиранья» купить в Киеве и Украине
+description: Яркий красный светодиод для цветовой индикации, красивой подсветки или новогодней гирлянды. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Amperka Troyka Светодиод «Пиранья» (Красный)</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Используйте светодиодный модуль из линейки <a href="https://mikronika.net/collection/troyka">Troyka-модулей</a> для цветовой индикации или красивой подсветки. Вам не придётся возиться с пайкой, мелкими компонентами на макетке или беспокоиться о правильном токоограничивающем резисторе и силовом ключе — всё уже готово.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/AgkLX5_WygI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Начинка</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Светодиодный модуль выполнен на ярком светодиоде <a href="https://mikronika.net/image/catalog/product/amperka-troyka-led-pirania-red/media/blfl7615-datasheet.pdf">BL-FL7615</a> с потреблением тока до 100 мА. На плате также распаян транзистор, для управление прожорливым пучком света. Яркие светодиоды из серии «Пиранья» можно использовать не только для индикации. Из них можно собрать <a href="http://wiki.amperka.ru/slot-box:light-show">светомузыку</a>, светофор, разнообразные гирлянды для новогодней ёлки или «лампу настроения».</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-led-pirania-red/media/amperka-troyka-led-pirania-red.1.gif" style="max-width: 100%" class="img-center" /></p>
+
+  <div class="wrap-attention" style="max-width: 85%">Светодиодные модули «Пиранья» очень яркие, поэтому не смотрите в середину светодиода с близкого расстояния, это очень вредно для глаз. Если нужна менее высокая яркость, обратите внимание на <a href="https://mikronika.net/product/amperka-troyka-led-5mm">индикаторные светодиоды</a>.</div>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Встроенный транзистор для управление ярким пучком света.</li>
+    <li>Цвет: красный.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Светодиодный индикатор подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через группу из трёх контактов.</p>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Пин управления светодиодом</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Модуль общается с микроконтроллером через цифровой сигнал. Светодиод горит при подаче высокого уровня на сигнальный пин и гаснет — при поступлении низкого уровня. Светодиод также поддерживает регулировку яркости, которую можно выставить с помощью ЦАП или ШИМ. Для программной работы с модулем используйте функции и библиотеки, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li>
+      Функции для Arduino:
+      <ul>
+        <li><a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">Включение и отключение светодиода</a></li>
+        <li><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">Плавная регулировка яркости светодиода</a></li>
+      </ul>
+    </li>
+    <li><a href="http://wiki.amperka.ru/js:led">Библиотека для Espruino</a></li>
+  </ul>
+
+  <div class="wrap-tip" style="max-width: 85%">Если вы новичок в программировании микроконтроллеров, обратите внимание на образовательные наборы <a href="https://mikronika.net/product/amperka-kit-matryoshka-z">Матрёшка</a> и <a href="https://mikronika.net/product/amperka-kit-malina-v4">Малина</a>.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>1× Шлейф «мама-мама» (3 провода)</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Amperka Troyka Светодиод «Пиранья» (Красный) / AMP-B005</li>
+    <li>Светодиодный модуль: BL-FL7615</li>
+    <li>Входное напряжение питания Vcc: 3,3–5 В</li>
+    <li>Потребляемый ток Icc: до 100 мА</li>
+    <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+    <li>Программный интерфейс: цифровой сигнал / ШИМ</li>
+    <li>
+      Логическое напряжение уровней:
+      <ul>
+        <li>Вход: 3,3–5 В</li>
+        <li>Выход: не используется</li>
+      </ul>
+    </li>
+    <li>Цвет: красный</li>
+    <li>Размеры: 25,4×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/js:led">Библиотека для Espruino</a></li>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-led-pirania-red/media/blfl7615-datasheet.pdf">Datasheet на светодиод BL-FL7615</a></li>
+  </ul>
+</span>

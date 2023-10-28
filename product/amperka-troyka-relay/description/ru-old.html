@@ -1,0 +1,194 @@
+<!--
+h1: Реле / Troyka-модуль
+h1-detail: Реле / Troyka-модуль
+short: Модуль с электромеханическим реле для управления мощной нагрузкой
+title: Реле для Arduino и Raspberry Pi купить в Украине
+description: Реле служит для управления бытовыми приборами с помощью Arduino и Raspberry Pi и других МК. Описание, характеристики, цена и фото на сайте.
+-->
+
+<div class="h1-detail">
+  <span class="header-color">Реле / Troyka-модуль</span>
+</div>
+
+<span class="font-family-size-head">
+  <p>Хотите управлять мощной нагрузкой и электроприборами с помощью микроконтроллера? Тогда вам не обойтись без модуля реле, который справляется с током до 16 А и переменным напряжением до 250 В. Работать с модулем просто: вам не придётся возиться с пайкой, макетной платой и проектированием обвязки для голого реле — всё уже готово и собрано в компактном <a href="https://mikronika.net/collection/troyka">Troyka-модуле</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Видеообзор</span>
+</h2>
+
+<h3>
+  <span class="header-color">Реле в обзоре железки на «Мини-Реле»</span>
+</h3>
+
+<div class="video-embed-container">
+  <iframe src="https://www.youtube.com/embed/kqvMFyqsjvQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h2>
+  <span class="header-color">Общие сведения</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>По своей сути реле — это простой механический рубильник, который коммутирует силовое напряжение с помощью слаботочного. Это даёт возможность внешним контроллерам, например <a href="https://mikronika.net/collection/arduino">Arduino</a> или <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a>, управлять бытовыми приборами. При этом электрическая связь между управляющей электроникой и коммутируемой нагрузкой отсутствует — никакие помехи не повлияют на работу девайса.</p>
+
+  <p><img alt="" src="https://mikronika.net/image/catalog/product/amperka-troyka-relay/media/amperka-troyka-relay.1.gif" style="max-width: 100%" class="img-center" /></p>
+</span>
+
+<h2>
+  <span class="header-color">Особенности</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Форм-фактор Troyka</a> — практичное решение для начинающих и опытных мейкеров.</li>
+    <li>Релейный модуль выполнен на основе электромеханическое реле <a href="https://mikronika.net/image/catalog/product/amperka-troyka-relay/media/rt314005-datasheet.pdf">RT314005</a>, которое способно коммутировать переменное напряжение до 250 В с током до 16 А.</li>
+    <li>Вся электронная обвязка необходимая для управления реле уже встроена в модуль. На модуле расположен индикаторный светодиод, который подскажет — замкнуто реле или нет.</li>
+  </ul>
+</span>
+
+<h2>
+  <span class="header-color">Подключение контроллера</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Реле подключается к <a href="https://mikronika.net/collection/controllers">управляющей электронике</a> через группу из трёх контактов.</p>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">S</td>
+        <td>Пин управления реле</td>
+        <td>Подключите к пину ввода-вывода микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">V</td>
+        <td>Питание</td>
+        <td>Подключите к питанию микроконтроллера.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">G</td>
+        <td>Земля</td>
+        <td>Подключите к земле микроконтроллера.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>При подключении к платформам форм-фактора Arduino R3 рекомендуем использовать <a href="https://mikronika.net/product/amperka-arduino-troyka-shield">Troyka Shield</a> или <a href="https://mikronika.net/product/amperka-arduino-troyka-slot-shield">Troyka Slot Shield</a>. А для компьютеров <a href="https://mikronika.net/collection/raspberry-pi">Raspberry Pi</a> предусмотрен Troyka HAT. Также модуль физически совместим с <a href="https://mikronika.net/collection/breadboards">breadboard’ом</a>.</p>
+</span>
+
+<h2>
+  <span class="header-color">Подключение нагрузки</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Нагрузка к реле подключается через клеммник под винт.</p>
+
+  <table border="1">
+    <tbody>
+      <tr>
+        <th style="padding: 10px; text-align: center">Контакт</th>
+        <th style="padding: 10px; text-align: center">Функция</th>
+        <th style="padding: 10px; text-align: center">Подключение</th>
+      </tr>
+      <tr>
+        <td style="text-align: center">NO</td>
+        <td>Нормально замкнутый</td>
+        <td>Подключите к нагрузке / Оставьте не подключенным</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">NC</td>
+        <td>Нормально разомкнутый</td>
+        <td>Подключите к нагрузке / Оставьте не подключенным</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">COM</td>
+        <td>Коммутируемый контакт</td>
+        <td>Подключите к силовому питанию</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Если на управляющей обмотке реле отсутствует напряжение, то между нормально замкнутым <span class="font-family-monospaced">NC</span> и коммутируемым <span class="font-family-monospaced">COM</span> контактами есть электрическая связь, а между нормально разомкнутым <span class="font-family-monospaced">NO</span> и коммутируемым <span class="font-family-monospaced">COM</span> — нет. При подаче напряжения на управляющую обмотку нормально разомкнутый <span class="font-family-monospaced">NO</span> контакт замыкается, а нормально замкнутый <span class="font-family-monospaced">NC</span> — размыкается.</p>
+
+  <div class="wrap-attention" style="max-width: 85%">Если вы сомневаетесь как подключить к реле электроприбор, работающий от общей сети <span class="font-family-monospaced">220 В</span> и у вас есть сомнения, вопросы на тему того как это делается, остановитесь: вы можете устроить пожар или убить себя. Убедитесь, что у вас в голове — кристальное понимание принципа работы реле и опасностей, которые связаны с высоким напряжением.</div>
+</span>
+
+<h2>
+  <span class="header-color">Программирование</span>
+</h2>
+
+<span class="font-family-size-article">
+  <p>Реле общается с микроконтроллером через цифровой сигнал. Обмотка реле включается при подаче высокого уровня на сигнальный пин и отключается — при поступлении низкого уровня. Для программной работы с модулем используйте библиотеки и функции, которые облегчают составления кода программы.</p>
+
+  <ul>
+    <li><a href="https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/">Функция включения и отключения для Arduino</a></li>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino.</a></li>
+  </ul>
+
+  <div class="wrap-info" style="max-width: 85%">Реле не поддерживает ШИМ-модуляцию! Если вам необходимо плавно управлять нагрузкой, воспользуйтесь <a href="https://mikronika.net/product/amperka-troyka-mosfet-n-channel">силовым ключом</a> для коммутации постоянного напряжения и твердотельным реле — для переменного.</div>
+</span>
+
+<!--Комплектация-->
+<h2>
+  <span class="header-color">Комплектация</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>1× Плата-модуль</li>
+    <li>1× Трёхпроводной шлейф</li>
+  </ul>
+</span>
+
+<!--Характеристики-->
+<h2>
+  <span class="header-color">Характеристики</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li>Модель: Реле / Troyka-модуль / AMP-B010</li>
+    <li>Реле: RT314005</li>
+    <li>
+      Цифровая часть:
+      <ul>
+        <li>Напряжение питания Vcc1: 3,3–5 В</li>
+        <li>Потребляемый ток Icc1: до 100 мА</li>
+        <li>Аппаратный интерфейс: Troyka-контакты S-V-G</li>
+        <li>Программный интерфейс: цифровой бинарный сигнал</li>
+      </ul>
+    </li>
+    <li>
+      Силовая часть:
+      <ul>
+        <li>Максимальное коммутируемое напряжение Vcc2: 28 В DC / 250 В AC</li>
+        <li>Максимальный коммутируемый ток Icc2: до 16 А</li>
+        <li>Разъём подключения нагрузки: клеммник под винт</li>
+      </ul>
+    </li>
+    <li>Рекомендованная частота переключения: до 1 Гц</li>
+    <li>Время жизни: не менее 50 000 переключений</li>
+    <li>Размеры: 50,8×25,4 мм</li>
+  </ul>
+</span>
+
+<!--Ресурсы-->
+<h2>
+  <span class="header-color">Ресурсы</span>
+</h2>
+
+<span class="font-family-size-article">
+  <ul>
+    <li><a href="https://amperka.ru/page/what-is-troyka-system">Что такое Troyka-модули</a></li>
+    <li><a href="http://wiki.amperka.ru/продукты:troyka:relay">Руководство по использованию</a></li>
+    <li><a href="http://wiki.amperka.ru/js:relay">Библиотека для Espruino</a></li>
+    <li><a href="https://mikronika.net/image/catalog/product/amperka-troyka-relay/media/rt314005-datasheet.pdf">Datasheet на реле RT314005</a></li>
+  </ul>
+</span>
