@@ -1,0 +1,18 @@
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-half {
+  max-width: 50%;
+}
+
+.img-quarter {
+  max-width: 25%;
+}
